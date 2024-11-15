@@ -14,7 +14,7 @@
 
 ## インストール方法
 
-1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=2) を右クリックから保存します。
+1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/blob/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
 2. `C:/EasyReforge/` などの浅いインストール先フォルダで `EasyReforgeInstaller.bat` をダブルクリックして実行します。
    - **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
 3. 指示に沿ってインストールとモデルのダウンロードが終わったら
