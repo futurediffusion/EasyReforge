@@ -1,1 +1,5 @@
 ﻿/EasyTools/
+/Model/*
+!/Model/**/*.bat
+/Output/
+/stable-diffusion-webui-reForge/

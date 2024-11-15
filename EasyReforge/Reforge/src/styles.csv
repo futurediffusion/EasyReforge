@@ -1,0 +1,22 @@
+﻿name,prompt,negative_prompt
+🌟quality,"#
+masterpiece, best quality, newest, absurdres","#
+bad anatomy, worst quality, low quality"
+🚀dmd2XL4,"#
+<lora:dmd2_sdxl_4step:1>",
+💬explicit,"#
+explicit, uncensored",
+💬nsfw,"#
+nsfw, uncensored",
+💬sensitive,"#
+sensitive",
+💬safe,"#
+safe",
+NoobE_dmd2XL設定📋↙,"#
+Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
+NoobV_dmd2XL設定📋↙,"#
+Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Sampler: Euler Ancestral CFG++, Schedule type: Beta",
+🚀HyperXL8,"#
+<lora:Hyper_sdxl_8step:1>",
+NoobE_Hyper8XL設定📋↙,"#
+Steps: 10, Sampler: Euler a, Schedule type: SGM Uniform, CFG scale: 2, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact)",
