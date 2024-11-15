@@ -45,7 +45,7 @@ class ReforgeUiConfig:
         cfg["txt2img/Prompt/value"] = (
             "1girl, rem \\(re:zero\\), re:zero kara hajimeru isekai seikatsu,\nofficial style,\nsanta costume, indoors,"
         )
-        cfg["txt2img/Styles/value"] = ["🌟クオリティ", "🚀dmd2XL4", "💬safe"]
+        cfg["txt2img/Styles/value"] = ["🌟quality", "🚀dmd2XL4", "💬safe"]
 
         cfg["txt2img/Batch count/maximum"] = 999
         cfg["txt2img/Batch size/maximum"] = 16
