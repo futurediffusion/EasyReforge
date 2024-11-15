@@ -76,6 +76,9 @@ E-Pred に戻すときも同様です。
 ### その他
 
 - `Update.bat` で EasyReforge を更新します。
+- 起動時の設定は `Settings` の左下にある `Other` - `Defaults` で変更できます。
+	- `View changes` で変更内容を確認して、`Apply` で保存します。
+- 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を別のフォルダに移動してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
 
 ## ライセンス
 
