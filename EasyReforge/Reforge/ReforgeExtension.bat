@@ -17,8 +17,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM 2024/11/15 JSON Decode Error https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953
 @REM https://github.com/Haoming02/sd-forge-couple
-call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-couple main
+call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-couple main ef08a705d69d538cd8c763e75250eec8225f5b22
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/blue-pen5805/sdweb-easy-generate-forever

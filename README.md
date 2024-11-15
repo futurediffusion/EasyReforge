@@ -6,8 +6,9 @@
 現在は [NoobAi (Epsilon-Pred & V-Pred)](https://civitai.com/models/833294) を中心に扱います。
 
 - ワンクリックインストール
-- Geforce RTX 3060 で FullHD を 11秒で生成するプリセット
-- 動作確認済みの拡張機能一式を組み込み
+- Geforce RTX 3060 VRAM 12GB で FullHD を 11秒で生成するプリセット
+	- Geforce GTX 1660 Ti VRAM 6GB でも一応動作します（FullHD 100秒弱）。
+- 軽く動作確認済みの拡張機能一式を組み込み
 - Civitai キー設定でモデル・LoRA・Wildcard・ADetailer モデルなど一式をダウンロード
 
 わからないことや要望や不具合がありましたら、 [@Zuntan03](https://x.com/Zuntan03) や [Issues](https://github.com/Zuntan03/EasyReforge/issues) にお知らせください。
@@ -79,6 +80,13 @@ E-Pred に戻すときも同様です。
 - 起動時の設定は `Settings` の左下にある `Other` - `Defaults` で変更できます。
 	- `View changes` で変更内容を確認して、`Apply` で保存します。
 - 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を別のフォルダに移動してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
+
+## 最近の更新
+
+### 2024/11/16
+
+- 直近の [Forge Couple の更新](https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953) でエラーが発生していたため巻き戻しました。
+- NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。
 
 ## ライセンス
 
