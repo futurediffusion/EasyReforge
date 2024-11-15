@@ -1,7 +1,5 @@
 ﻿# EasyReforge
 
-# 準備中
-
 [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) でお手軽に高速画像生成する EasyReforge です。  
 現在は [NoobAi (Epsilon-Pred & V-Pred)](https://civitai.com/models/833294) を中心に扱います。
 
@@ -29,8 +27,8 @@
 		- 画像は `Output\Reforge\txt2img-images` に保存されます。
 			- `InfiniteImageBrowsing.bat` で生成した画像を確認できます。
 	- プロンプト欄に入力するタグは [Danbooru](https://danbooru.donmai.us/) の左上にある `Search` 欄で、**日本語で検索して調べます** 。
-	- `Generate` ボタン下のスタイル設定欄で `quality`, `dmd2XL4`, `safe` を選択した状態で生成します。
-		- NSFW なら `safe` を消して、`explicit` を設定します。
+	- `Generate` ボタン下のスタイル設定欄で `quality`, `dmd2XL4`, `safe` を選択して `📋` で適用します。
+		- NSFW なら `safe` の代わりに `explicit` を適用します。
 	- プロンプト入力欄下の `TIPO` を開いて `Enabled` を有効にすると、入力済みのプロンプトから関連するプロンプトを追加して生成します（NSFW で特に強力です）。
 
 ### 追加データのダウンロード
@@ -60,19 +58,16 @@
 
 [追加データのダウンロード](#追加データのダウンロード) で Civitai キーを設定してから、`Download/` にある `NoobAiVPred_StandardModels.bat` で V-Pred のモデルや LoRA をダウンロードします。
 
-1. プロンプト入力欄右のスタイル選択欄を空にします。
-2. `NoobV_dmd2XL設定📋↙` のみを選択して、上の `📋` と `↙` を順に押します。
-3. `quality`, `dmd2XL4`, `safe` または `explicit` を選択し直します。
-4. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を有効にします。
+
+1. `NoobV_dmd2XL設定📋↙` のみを選択して、上の `📋` と `↙` を順に押します。
+2. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を有効にします。
 	- V-Pred や ZTSNR 自動判定機能は派生モデルで正常に動作しない場合があるようですのでご注意ください。
-5. `__Booru1girl__ official logo, upper body` や `__NsfwPony/char__ official logo, upper body` で生成すると、ロゴなどで学習精度の高さを確認できます。
+3. `__Booru1girl__ official logo, upper body` や `__NsfwPony/char__ official logo, upper body` で生成すると、ロゴなどで学習精度の高さを確認できます。
 
 E-Pred に戻すときも同様です。
 
-1. プロンプト入力欄右のスタイル選択欄を空にします。
-2. `NoobE_dmd2XL設定📋↙` のみを選択して、上の `📋` と `↙` を順に押します。
-3. `quality`, `dmd2XL4`, `safe` または `explicit` を選択し直します。
-4. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
+1. `NoobE_dmd2XL設定📋↙` のみを選択して、上の `📋` と `↙` を順に押します。
+2. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
 
 ### その他
 
@@ -86,7 +81,11 @@ E-Pred に戻すときも同様です。
 ### 2024/11/16
 
 - 直近の [Forge Couple の更新](https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953) でエラーが発生していたため巻き戻しました。
-- NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。
+- NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。生成情報付きサンプル  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE_Unique/PVCStyleModelMovable_v10_0.webp)
+- NoobV に [PersonalMergeV_v05](https://civitai.com/models/835655?modelVersionId=1064266) を追加しました。高速化 LoRA は不要です。生成情報付きサンプル  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVPersonalMergeV_v05_0.webp)
+- 上記サンプルで意図的に入力したプロンプトは `santa costume, fashion magazine cover, night, snow` のみで、あとはワイルドカードと TIPO 補完です。
 
 ## ライセンス
 
