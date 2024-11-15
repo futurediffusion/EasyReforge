@@ -5,19 +5,15 @@ set JUNCTION=%EASY_TOOLS%\Link\Junction.bat
 
 pushd %~dp0..\..\stable-diffusion-webui-reForge
 
-if not exist models\adetailer\ ( mkdir models\adetailer )
 call %JUNCTION% models\adetailer ..\Model\adetailer
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-if not exist models\ControlNet\ ( mkdir models\ControlNet )
 call %JUNCTION% models\ControlNet ..\Model\ControlNet
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-if not exist models\ESRGAN\ ( mkdir models\ESRGAN )
 call %JUNCTION% models\ESRGAN ..\Model\ESRGAN
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-if not exist models\Lora\ ( mkdir models\Lora )
 call %JUNCTION% models\Lora ..\Model\Lora
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
