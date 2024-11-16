@@ -9,6 +9,7 @@ class ReforgeConfig:
     def __init__(self, cfg_path):
         self.updaters = {
             "0.0.0": self.update_0_0_0,
+            "0.1.0": self.update_0_1_0,
         }
 
         if not os.path.exists(cfg_path):
@@ -75,7 +76,10 @@ class ReforgeConfig:
         cfg["ad_save_images_before"] = True
         cfg["ad_bbox_sortby"] = "Area (large to small)"
 
-        # cfg["sd_checkpoint_dropdown_use_short"] = True
+    def update_0_1_0(self, cfg):
+        cfg["easy_reforge_config_version"] = "0.1.1"
+
+        cfg["disable_weights_auto_swap"] = False
 
 
 if __name__ == "__main__":

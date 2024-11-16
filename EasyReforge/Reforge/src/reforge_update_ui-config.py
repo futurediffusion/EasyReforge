@@ -9,6 +9,7 @@ class ReforgeUiConfig:
     def __init__(self, cfg_path):
         self.updaters = {
             "0.0.0": self.update_0_0_0,
+            "0.1.0": self.update_0_1_0,
         }
 
         if not os.path.exists(cfg_path):
@@ -86,15 +87,24 @@ class ReforgeUiConfig:
         cfg["txt2img/Enable this tab (3rd)/value"] = False
         cfg["txt2img/Enable this tab (4th)/value"] = False
 
-        # cfg[""] =
+    def update_0_1_0(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.1"
+
+        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = False
+        cfg["customscript/dynamic_prompting.py/txt2img/Fixed seed/value"] = False
+
+        cfg["txt2img/Prompt/value"] = (
+            "1girl, rem \\(re:zero\\), re:zero kara hajimeru isekai seikatsu,\nofficial style,\nsanta costume, indoors,\n<lora:dmd2_sdxl_4step:1>masterpiece, best quality, newest, absurdres, safe"
+        )
+        cfg["txt2img/Negative prompt/value"] = "bad anatomy, worst quality, low quality"
+        cfg["txt2img/Styles/value"] = []
+        #
 
         # cfg["customscript/tipo.py/txt2img/Enabled/value"] = True
         # cfg["txt2img/Inpaint denoising strength/value"] = 0.3
         # cfg["txt2img/Inpaint denoising strength 2nd/value"] = 0.3
         # cfg["txt2img/Inpaint denoising strength 3rd/value"] = 0.3
         # cfg["txt2img/Inpaint denoising strength 4th/value"] = 0.3
-
-        # cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = False
 
 
 if __name__ == "__main__":
