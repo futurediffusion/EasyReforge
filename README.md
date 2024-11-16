@@ -76,6 +76,10 @@ E-Pred に戻すときも同様です。
 	- `View changes` で変更内容を確認して、`Apply` で保存します。
 - 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を別のフォルダに移動してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
 
+## トラブルシューティング（仮）
+
+- 初回の画像生成では問題がないが 2枚目以降で Runtime Error が発生する環境において、`Reforge_ArgSample_CudaMemOpts.bat` で起動するとエラーが発生しない場合があります。
+
 ## 最近の更新
 
 ### 2024/11/16
@@ -86,8 +90,8 @@ ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` 
 - 直近の [Forge Couple の更新](https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953) でエラーが発生していたため巻き戻しました。
 - バッチ生成時に同一シードになっていた問題を修正しました。
 - HarmoniqMix_v10 のパス変更に対応し、HarmoniqMixSpo_v10 を追加しました。
-- NoobV に [PersonalMergeV_v05](https://civitai.com/models/835655?modelVersionId=1064266) を追加しました。  
-**高速化 LoRA の dmd2XL は不要です。** 生成情報付きサンプル  
+- NoobV に [PersonalMergeVLow_v05](https://civitai.com/models/835655?modelVersionId=1064266) と [PersonalMergeVNormal_v05](https://civitai.com/models/835655?modelVersionId=1065716)を追加しました。  
+**Low は高速化 LoRA の dmd2XL は不要です。** 生成情報付きサンプル  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVPersonalMergeV_v05_0.webp)
 - NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。生成情報付きサンプル  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE_Unique/PVCStyleModelMovable_v10_0.webp)
