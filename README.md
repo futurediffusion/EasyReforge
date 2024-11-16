@@ -85,6 +85,7 @@ E-Pred に戻すときも同様です。
 ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` では有効にならない点もご注意ください。
 - 直近の [Forge Couple の更新](https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953) でエラーが発生していたため巻き戻しました。
 - バッチ生成時に同一シードになっていた問題を修正しました。
+- HarmoniqMix_v10 のパス変更に対応し、HarmoniqMixSpo_v10 を追加しました。
 - NoobV に [PersonalMergeV_v05](https://civitai.com/models/835655?modelVersionId=1064266) を追加しました。  
 **高速化 LoRA の dmd2XL は不要です。** 生成情報付きサンプル  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVPersonalMergeV_v05_0.webp)
