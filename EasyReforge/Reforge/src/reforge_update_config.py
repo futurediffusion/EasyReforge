@@ -1,6 +1,7 @@
 ﻿import json
 import os
 import sys
+from datetime import datetime
 
 
 class ReforgeConfig:
@@ -11,6 +12,7 @@ class ReforgeConfig:
             "0.0.0": self.update_0_0_0,
             "0.1.0": self.update_0_1_0,
         }
+        self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
         if not os.path.exists(cfg_path):
             with open(cfg_path, "w", encoding="utf-8") as f:  # BOM 不可
@@ -41,6 +43,12 @@ class ReforgeConfig:
                 f.seek(0)
                 json.dump(cfg, f, indent=4)
                 f.truncate()
+
+    def backup_styles_csv(self):
+        if os.path.exists(self.styles_csv_path):
+            styles_path, ext = os.path.splitext(self.styles_csv_path)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M_%S%f")
+            os.rename(self.styles_csv_path, f"{styles_path}_{timestamp}{ext}")
 
     def update(self, cfg):
         version = cfg["easy_reforge_config_version"]
@@ -80,6 +88,8 @@ class ReforgeConfig:
         cfg["easy_reforge_config_version"] = "0.1.1"
 
         cfg["disable_weights_auto_swap"] = False
+
+        # self.backup_styles_csv()
 
 
 if __name__ == "__main__":

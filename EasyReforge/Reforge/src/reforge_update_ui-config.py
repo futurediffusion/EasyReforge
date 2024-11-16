@@ -69,9 +69,7 @@ class ReforgeUiConfig:
         cfg["customscript/tipo.py/txt2img/Prompt Format/value"] = "tag only (DTG mode)"
         cfg["customscript/tipo.py/txt2img/Seed for upsampling tags/value"] = 0
         cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = False
-        cfg["customscript/tipo.py/txt2img/Ban tags/value"] = (
-            "background, greyscale, monochrome"
-        )
+        cfg["customscript/tipo.py/txt2img/Ban tags/value"] = "background, greyscale, monochrome"
 
         cfg["customscript/dynamic_prompting.py/txt2img/Fixed seed/value"] = True
         cfg["customscript/negpip.py/txt2img/NegPiP/value"] = True

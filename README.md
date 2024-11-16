@@ -18,18 +18,26 @@
    - **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
 3. 指示に沿ってインストールとモデルのダウンロードが終わったら
 
+## 重要なお知らせ
+
+- **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
+
 ## 使い方（仮）
 
-### 最初の生成
+### 基本操作
 
 - EasyReforge インストール先にある `Reforge.bat` で起動します。
 	- 右側の `Generate` ボタンで画像を生成します。
 		- 画像は `Output\Reforge\txt2img-images` に保存されます。
 			- `InfiniteImageBrowsing.bat` で生成した画像を確認できます。
 	- プロンプト欄に入力するタグは [Danbooru](https://danbooru.donmai.us/) の左上にある `Search` 欄で、**日本語で検索して調べます** 。
-	- `Generate` ボタン下のスタイル設定欄で `quality`, `dmd2XL4`, `safe` を選択して `📋` で適用します。
+	- `Generate` ボタン下のスタイル設定欄で `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して `📋` と `↙` で基本的な設定を適用できます。
 		- NSFW なら `safe` の代わりに `explicit` を適用します。
 	- プロンプト入力欄下の `TIPO` を開いて `Enabled` を有効にすると、入力済みのプロンプトから関連するプロンプトを追加して生成します（NSFW で特に強力です）。
+- **`Update.bat` で EasyReforge を更新します。**
+- **起動時の設定状態は `Settings` の左下にある `Other` - `Defaults` で変更できます。**
+	- `View changes` で変更内容を確認して、`Apply` で保存します。
+	- 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を退避してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
 
 ### 追加データのダウンロード
 
@@ -59,30 +67,32 @@
 [追加データのダウンロード](#追加データのダウンロード) で Civitai キーを設定してから、`Download/` にある `NoobAiVPred_StandardModels.bat` で V-Pred のモデルや LoRA をダウンロードします。
 
 
-1. `NoobV_dmd2XL設定📋↙` のみを選択して、上の `📋` と `↙` を順に押します。
-2. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を有効にします。
+1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を有効にします。
 	- V-Pred や ZTSNR 自動判定機能は派生モデルで正常に動作しない場合があるようですのでご注意ください。
-3. `__Booru1girl__ official logo, upper body` や `__NsfwPony/char__ official logo, upper body` で生成すると、ロゴなどで学習精度の高さを確認できます。
+1. `DMD2[4+]: Euler a CFG++, Beta 📋↙` を選択して、`📋` と `↙` で適用します。
+	- モデルによっては `DMD2[4]: LCM, SGM Uniform 📋↙` の設定のままでも生成できます。
+2. `__Booru1girl__ official logo, upper body` や `__NsfwPony/char__ official logo, upper body` で生成すると、ロゴなどで学習精度の高さを確認できます。
 
 E-Pred に戻すときも同様です。
 
-1. `NoobE_dmd2XL設定📋↙` のみを選択して、上の `📋` と `↙` を順に押します。
-2. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
+1. `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して、`📋` と `↙` で適用します。
+1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
 
-### その他
-
-- `Update.bat` で EasyReforge を更新します。
-- 起動時の設定は `Settings` の左下にある `Other` - `Defaults` で変更できます。
-	- `View changes` で変更内容を確認して、`Apply` で保存します。
-- 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を別のフォルダに移動してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
 
 ## トラブルシューティング（仮）
 
 - 初回の画像生成では問題がないが 2枚目以降で Runtime Error が発生する場合
-	- 画面左下の `Never OOM Integrated` で `Enable VRAM Management` を有効にし、`Choose how VRAM is managed` を `Disabled` や他の値に変更するとエラーが発生しない場合があります。
 	- `Reforge_ArgSample_CudaMemOpts.bat` で起動するとエラーが発生しない場合があります。
+	- 画面左下の `Never OOM Integrated` で `Enable VRAM Management` を有効にし、`Choose how VRAM is managed` を `Disabled` や他の値に変更するとエラーが発生しない場合があります。
+- `Update.bat` の更新でエラーが発生する場合
+	- `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を実行してください。
 
 ## 最近の更新
+
+### 2024/11/17
+
+- スタイルの運用を変更しました。
+- 拡張機能の [Sigmas merge](https://github.com/Panchovix/reForge-Sigmas_merge) を追加しました。
 
 ### 2024/11/16
 

@@ -13,6 +13,10 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% Bing-su adetailer main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/Panchovix/reForge-Sigmas_merge
+call %GITHUB_CLONE_OR_PULL% Panchovix reForge-Sigmas_merge main
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 @REM https://github.com/adieyal/sd-dynamic-prompts
 call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
