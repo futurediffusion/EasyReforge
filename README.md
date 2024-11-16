@@ -78,7 +78,9 @@ E-Pred に戻すときも同様です。
 
 ## トラブルシューティング（仮）
 
-- 初回の画像生成では問題がないが 2枚目以降で Runtime Error が発生する環境において、`Reforge_ArgSample_CudaMemOpts.bat` で起動するとエラーが発生しない場合があります。
+- 初回の画像生成では問題がないが 2枚目以降で Runtime Error が発生する場合
+	- 画面左下の `Never OOM Integrated` で `Enable VRAM Management` を有効にし、`Choose how VRAM is managed` を `Disabled` や他の値に変更するとエラーが発生しない場合があります。
+	- `Reforge_ArgSample_CudaMemOpts.bat` で起動するとエラーが発生しない場合があります。
 
 ## 最近の更新
 
