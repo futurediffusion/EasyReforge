@@ -31,6 +31,8 @@ call %GITHUB_CLONE_OR_PULL% blue-pen5805 sdweb-easy-generate-forever master
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/alemelis/sd-webui-ar
+@REM fork https://github.com/LEv145/--sd-webui-ar-plus
+@REM fork https://github.com/altoiddealer/--sd-webui-ar-plusplus
 call %GITHUB_CLONE_OR_PULL% alemelis sd-webui-ar main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 

@@ -101,6 +101,9 @@ class ReforgeConfig:
 
         cfg["bilingual_localization_file"] = "ja_JP"
 
+        # cfg["samples_format"] = "webp"
+        # cfg["grid_format"] = "webp"
+
 
 if __name__ == "__main__":
     forge_config = ReforgeConfig(sys.argv[1])

@@ -92,6 +92,7 @@ E-Pred に戻すときも同様です。
 
 ### 2024/11/17
 
+- [NoobAiVPred_v06](https://civitai.com/models/833294?modelVersionId=1070239), [HarmoniqMixSpo_v11](https://huggingface.co/hybskgks28275/checkpoint) のダウンロードに対応しました。
 - スタイルの運用を変更しました。
 - UI の日本語併記を有効にしました。
 	- UI の日本語併記を止めるには `Settings` にある `Bilingual Localization` の `Localization file` を `None` にして、`Apply settings` と `Reload UI` をしてください。
