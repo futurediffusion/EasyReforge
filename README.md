@@ -67,7 +67,6 @@
 
 [追加データのダウンロード](#追加データのダウンロード) で Civitai キーを設定してから、`Download/` にある `NoobAiVPred_StandardModels.bat` で V-Pred のモデルや LoRA をダウンロードします。
 
-
 1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を有効にします。
 	- V-Pred や ZTSNR 自動判定機能は派生モデルで正常に動作しない場合があるようですのでご注意ください。
 1. `DMD2[4+]: Euler a CFG++, Beta 📋↙` を選択して、`📋` と `↙` で適用します。
@@ -79,7 +78,6 @@ E-Pred に戻すときも同様です。
 1. `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して、`📋` と `↙` で適用します。
 1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
 
-
 ## トラブルシューティング（仮）
 
 - 初回の画像生成では問題がないが 2枚目以降で Runtime Error が発生する場合
@@ -89,6 +87,17 @@ E-Pred に戻すときも同様です。
 	- `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を実行してください。
 
 ## 最近の更新
+
+### 2024/11/18
+
+[NoobAiVPred_v06](https://civitai.com/models/833294?modelVersionId=1070239) と [HarmoniqMixSpo_v11](https://huggingface.co/hybskgks28275/checkpoint) のサンプラ・スケジューラ例
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler1_2.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper1_2.webp)|
+|:-:|:-:|
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler0_2.webp)
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper0_2.webp)
 
 ### 2024/11/17
 
