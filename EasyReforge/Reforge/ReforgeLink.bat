@@ -26,15 +26,14 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %JUNCTION% extensions\sd-dynamic-prompts\wildcards ..\Model\wildcards 
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-if not exist ..\Output\ ( mkdir ..\Output )
-call %JUNCTION% ..\Output\Reforge outputs
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
 if not exist outputs\txt2img-images\ ( mkdir outputs\txt2img-images )
 if not exist outputs\img2img-images\ ( mkdir outputs\img2img-images )
 if not exist outputs\extras-images\ ( mkdir outputs\extras-images )
 if not exist outputs\txt2img-grids\ ( mkdir outputs\txt2img-grids )
 if not exist outputs\img2img-grids\ ( mkdir outputs\img2img-grids )
 if not exist log\images\ ( mkdir log\images )
+
+call %JUNCTION% ..\OutputReforge outputs
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem %~dp0..\..\stable-diffusion-webui-reForge

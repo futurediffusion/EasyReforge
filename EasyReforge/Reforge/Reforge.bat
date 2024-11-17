@@ -24,17 +24,13 @@ echo python -m pip install -qq --upgrade pip
 python -m pip install -qq --upgrade pip
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-@REM echo pip install -qq torch==2.4.1+cu124 torchvision --index-url https://download.pytorch.org/whl/cu124
-@REM pip install -qq torch==2.4.1+cu124 torchvision --index-url https://download.pytorch.org/whl/cu124
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
-
 echo pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
 pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-@REM ImportError: cannot import name 'cached_download' from 'huggingface_hub' 
-echo pip install -qq peft==0.13.2 huggingface-hub==0.25.2
-pip install -qq peft==0.13.2 huggingface-hub==0.25.2
-if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+@REM fixed ImportError: cannot import name 'cached_download' from 'huggingface_hub'
+@REM echo pip install -qq peft==0.13.2 huggingface-hub==0.25.2
+@REM pip install -qq peft==0.13.2 huggingface-hub==0.25.2
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 popd

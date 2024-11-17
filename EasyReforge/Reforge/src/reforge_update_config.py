@@ -12,6 +12,7 @@ class ReforgeConfig:
             "0.0.0": self.update_0_0_0,
             "0.1.0": self.update_0_1_0,
             "0.1.1": self.update_0_1_1,
+            "0.1.2": self.update_0_1_2,
         }
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
@@ -94,6 +95,11 @@ class ReforgeConfig:
         cfg["easy_reforge_config_version"] = "0.1.2"
 
         self.backup_styles_csv()
+
+    def update_0_1_2(self, cfg):
+        cfg["easy_reforge_config_version"] = "0.1.3"
+
+        cfg["bilingual_localization_file"] = "ja_JP"
 
 
 if __name__ == "__main__":

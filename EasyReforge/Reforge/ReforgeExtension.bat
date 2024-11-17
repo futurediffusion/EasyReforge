@@ -73,4 +73,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% KohakuBlueleaf z-tipo-extension main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP
+call %GITHUB_CLONE_OR_PULL% L4Ph stable-diffusion-webui-localization-ja_JP main
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 popd rem %~dp0..\..\stable-diffusion-webui-reForge\extensions

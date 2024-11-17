@@ -28,7 +28,7 @@
 
 - EasyReforge インストール先にある `Reforge.bat` で起動します。
 	- 右側の `Generate` ボタンで画像を生成します。
-		- 画像は `Output\Reforge\txt2img-images` に保存されます。
+		- 画像は `OutputReforge\txt2img-images` に保存されます。
 			- `InfiniteImageBrowsing.bat` で生成した画像を確認できます。
 	- プロンプト欄に入力するタグは [Danbooru](https://danbooru.donmai.us/) の左上にある `Search` 欄で、**日本語で検索して調べます** 。
 	- `Generate` ボタン下のスタイル設定欄で `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して `📋` と `↙` で基本的な設定を適用できます。
@@ -38,6 +38,7 @@
 - **起動時の設定状態は `Settings` の左下にある `Other` - `Defaults` で変更できます。**
 	- `View changes` で変更内容を確認して、`Apply` で保存します。
 	- 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を退避してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
+- UI の日本語併記を止めるには `Settings` にある `Bilingual Localization` の `Localization file` を `None` にして、`Apply settings` と `Reload UI` をしてください。
 
 ### 追加データのダウンロード
 
@@ -92,7 +93,11 @@ E-Pred に戻すときも同様です。
 ### 2024/11/17
 
 - スタイルの運用を変更しました。
+- UI の日本語併記を有効にしました。
+	- UI の日本語併記を止めるには `Settings` にある `Bilingual Localization` の `Localization file` を `None` にして、`Apply settings` と `Reload UI` をしてください。
 - 拡張機能の [Sigmas merge](https://github.com/Panchovix/reForge-Sigmas_merge) を追加しました。
+- 画像の出力先フォルダを `Output/Reforge` から `OutputReforge` に変更しました。
+	- 古い `Output/` は不要ですので削除してください。
 
 ### 2024/11/16
 
