@@ -4,13 +4,13 @@
 "🎨StyleV","__MixedStyle__ # <lora:NoobVStylesCollection:1> __NoobStylesCollection__ # <lora:NoobVStylesDump:1> __NoobVStylesDump__",
 "DMD2[4]: LCM, SGM Uniform 📋↙","<lora:dmd2_sdxl_4step:1> masterpiece, best quality, newest, absurdres, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
-Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
+Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
 "DMD2[4]: LCM, DDIM 📋↙","<lora:dmd2_sdxl_4step:1> masterpiece, best quality, newest, absurdres, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
-Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: DDIM",
+Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: DDIM",
 "DMD2[4+]: Euler a CFG++, Beta 📋↙","<lora:dmd2_sdxl_4step:1> masterpiece, best quality, newest, absurdres, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
-Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 4, Hires upscaler: Latent (nearest-exact), Sampler: Euler Ancestral CFG++, Schedule type: Beta",
+Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: Euler Ancestral CFG++, Schedule type: Beta",
 "Hyper[10+]: Euler a, SGM Uniform 📋↙","<lora:Hyper_sdxl_8step:1> masterpiece, best quality, newest, absurdres, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
-Steps: 10, CFG scale: 2, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 10, Hires upscaler: Latent (nearest-exact), Sampler: Euler a, Schedule type: SGM Uniform",
+Steps: 10, CFG scale: 2, Denoising strength: 0.6, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: Euler a, Schedule type: SGM Uniform",

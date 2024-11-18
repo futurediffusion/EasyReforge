@@ -11,6 +11,7 @@ class ReforgeUiConfig:
             "0.0.0": self.update_0_0_0,
             "0.1.0": self.update_0_1_0,
             "0.1.1": self.update_0_1_1,
+            "0.1.2": self.update_0_1_2,
         }
 
         if not os.path.exists(cfg_path):
@@ -109,6 +110,11 @@ class ReforgeUiConfig:
         cfg["customscript/sampler.py/img2img/Schedule type/value"] = "SGM Uniform"
         cfg["customscript/sampler.py/img2img/Sampling steps/value"] = 4
         cfg["img2img/Denoising strength/value"] = 0.6
+
+    def update_0_1_2(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.3"
+
+        cfg["customscript/lora_block_weight.py/txt2img/Active/value"] = True
 
         # cfg["customscript/tipo.py/txt2img/Enabled/value"] = True
         # cfg["txt2img/Inpaint denoising strength/value"] = 0.3

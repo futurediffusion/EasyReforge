@@ -11,6 +11,15 @@
 
 わからないことや要望や不具合がありましたら、 [@Zuntan03](https://x.com/Zuntan03) や [Issues](https://github.com/Zuntan03/EasyReforge/issues) にお知らせください。
 
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)
+
+柔軟なスタイル選択
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVMixStyle.webp)
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
+|:-:|:-:|
+
 ## インストール方法
 
 1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
@@ -22,7 +31,7 @@
 
 - **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
 
-## 使い方（仮）
+## 使い方
 
 ### 基本操作
 
@@ -90,14 +99,16 @@ E-Pred に戻すときも同様です。
 
 ### 2024/11/18
 
+- [NoobAiVPredIterComp_v06](https://civitai.com/models/935739?modelVersionId=1071682), [copycatNoobV_v06](https://civitai.com/models/894218?modelVersionId=1073042) のダウンロードに対応しました。
+- [sd-webui-ar](https://github.com/alemelis/sd-webui-ar) を [sd-webui-ar-plusplus](https://github.com/altoiddealer/--sd-webui-ar-plusplus) に変更しました。
+- [sd-webui-lora-block-weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) を [sd-webui-lora-block-weight-reforge](https://github.com/Panchovix/sd-webui-lora-block-weight-reforge) に変更しました。
+
 [NoobAiVPred_v06](https://civitai.com/models/833294?modelVersionId=1070239) と [HarmoniqMixSpo_v11](https://huggingface.co/hybskgks28275/checkpoint) のサンプラ・スケジューラ例
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler1_2.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper1_2.webp)|
 |:-:|:-:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler0_2.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper0_2.webp)|
 
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler0_2.webp)
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper0_2.webp)
 
 ### 2024/11/17
 
