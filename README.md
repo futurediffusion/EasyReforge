@@ -4,7 +4,7 @@
 現在は [NoobAi (Epsilon-Pred & V-Pred)](https://civitai.com/models/833294) を中心に扱います。
 
 - ワンクリックインストール
-- Geforce RTX 3060 VRAM 12GB で FullHD を 11秒で生成するプリセット
+- Geforce RTX 3060 VRAM 12GB で FullHD を 10秒で生成するプリセット
 	- Geforce GTX 1660 Ti VRAM 6GB でも一応動作します（FullHD 100秒弱）。
 - 軽く動作確認済みの拡張機能一式を組み込み
 - Civitai キー設定でモデル・LoRA・Wildcard・ADetailer モデルなど一式をダウンロード
@@ -20,16 +20,16 @@
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
 |:-:|:-:|
 
+## 重要なお知らせ
+
+- **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
+
 ## インストール方法
 
 1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
 2. `C:/EasyReforge/` などの浅いインストール先フォルダで `EasyReforgeInstaller.bat` をダブルクリックして実行します。
    - **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
-3. 指示に沿ってインストールとモデルのダウンロードが終わったら
-
-## 重要なお知らせ
-
-- **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
+3. 指示に沿ってインストールとモデルのダウンロードが終わったら [使い方](#使い方) へ。
 
 ## 使い方
 
@@ -72,7 +72,7 @@
 ### V-Prediction を試す
 
 **NoobAI の V-Prediction 版は開発中です。**  
-**現時点では V-Prediction & ZTSNR に対応した高速化 LoRA も存在しないため、強引な対応により品質が落ちています（が、その代わりに 3060 で FullHD を 15秒で生成できます）。**
+**現時点では V-Prediction & ZTSNR に対応した高速化 LoRA も存在しないため、強引な対応により品質が落ちています（が、その代わりに 3060 で FullHD を 10秒で生成できます）。**
 
 [追加データのダウンロード](#追加データのダウンロード) で Civitai キーを設定してから、`Download/` にある `NoobAiVPred_StandardModels.bat` で V-Pred のモデルや LoRA をダウンロードします。
 
