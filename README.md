@@ -97,6 +97,13 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/19
+
+- Civitai からの DL ができない不具合を修正しました。
+- プリセットに `DMD2[4]: DPM++ 2S a, SGM Uniform 📋↙` を追加しました。
+- [HarmoniqMixSpoEx_v11](https://huggingface.co/hybskgks28275/checkpoint) のダウンロードに対応しました。
+- ダークテーマを設定する起動オプションサンプルの `Reforge_ArgSample_DarkTheme.bat` を追加しました。
+
 ### 2024/11/18
 
 - [NoobAiVPredIterComp_v06](https://civitai.com/models/935739?modelVersionId=1071682), [copycatNoobV_v06](https://civitai.com/models/894218?modelVersionId=1073042) のダウンロードに対応しました。
