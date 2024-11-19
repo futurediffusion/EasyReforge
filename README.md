@@ -11,25 +11,23 @@
 
 わからないことや要望や不具合がありましたら、 [@Zuntan03](https://x.com/Zuntan03) や [Issues](https://github.com/Zuntan03/EasyReforge/issues) にお知らせください。
 
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)
-
-柔軟なスタイル選択
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVMixStyle.webp)
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
-|:-:|:-:|
-
-## 重要なお知らせ
-
-- **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
-
 ## インストール方法
 
 1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
 2. `C:/EasyReforge/` などの浅いインストール先フォルダで `EasyReforgeInstaller.bat` をダブルクリックして実行します。
    - **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
 3. 指示に沿ってインストールとモデルのダウンロードが終わったら [使い方](#使い方) へ。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Tipo.webp)
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid1_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid2_4K.webp)|
+|:-:|:-:|:-:|
+
+## 重要なお知らせ
+
+- **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
 
 ## 使い方
 
@@ -97,6 +95,10 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/20
+
+- 『[ずっと遊べる TIPO のススメ](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Tipo.webp)』を公開しました。
+
 ### 2024/11/19
 
 - Civitai からの DL ができない不具合を修正しました。
@@ -141,6 +143,16 @@ ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` 
 - NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。生成情報付きサンプル  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE_Unique/PVCStyleModelMovable_v10_0.webp)
 - 上記サンプルで意図的に入力したプロンプトは `santa costume, fashion magazine cover, night, snow` のみで、あとはワイルドカードと TIPO 補完です。
+
+## 参考画像
+
+柔軟なスタイル選択
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVMixStyle.webp)
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
+|:-:|:-:|
+
 
 ## ライセンス
 
