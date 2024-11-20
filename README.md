@@ -1,22 +1,26 @@
 ﻿# EasyReforge
 
 [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) でお手軽に高速画像生成する EasyReforge です。  
-現在は [NoobAi (Epsilon-Pred & V-Pred)](https://civitai.com/models/833294) を中心に扱います。
+[NoobAi](https://civitai.com/models/833294) の Epsilon-Prediction 版 (NoobE) と V-Prediction 版 (NoobV) を主に扱います。
 
 - ワンクリックインストール
 - Geforce RTX 3060 VRAM 12GB で FullHD を 10秒で生成するプリセット
-	- Geforce GTX 1660 Ti VRAM 6GB でも一応動作します（FullHD 100秒弱）。
-- 軽く動作確認済みの拡張機能一式を組み込み
-- Civitai キー設定でモデル・LoRA・Wildcard・ADetailer モデルなど一式をダウンロード
+- 便利な拡張機能一式を組み込み
+- Civitai キー設定でモデル・LoRA・Wildcard・ADetailer モデルなどリソース一式をダウンロード
 
-わからないことや要望や不具合がありましたら、 [@Zuntan03](https://x.com/Zuntan03) や [Issues](https://github.com/Zuntan03/EasyReforge/issues) にお知らせください。
+わからないことや不具合や要望がありましたら、 [@Zuntan03](https://x.com/Zuntan03) や [Issues](https://github.com/Zuntan03/EasyReforge/issues) にお知らせください。
 
 ## インストール方法
 
 1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
 2. `C:/EasyReforge/` などの浅いインストール先フォルダで `EasyReforgeInstaller.bat` をダブルクリックして実行します。
    - **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
-3. 指示に沿ってインストールとモデルのダウンロードが終わったら [使い方](#使い方) へ。
+3. `動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）` で `Enter` します。
+4. インストールが問題なく終了したら [使い方](#使い方) へ。
+
+**インストールで問題が発生したら『[インストールのトラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』へ。**
+
+## 使い方
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)
 
@@ -24,12 +28,6 @@
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid1_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid2_4K.webp)|
 |:-:|:-:|:-:|
-
-## 重要なお知らせ
-
-- **`Update.bat` での更新時にエラーが出る場合は `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を再度実行してください。**
-
-## 使い方
 
 ### 基本操作
 
@@ -41,11 +39,14 @@
 	- `Generate` ボタン下のスタイル設定欄で `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して `📋` と `↙` で基本的な設定を適用できます。
 		- NSFW なら `safe` の代わりに `explicit` を適用します。
 	- プロンプト入力欄下の `TIPO` を開いて `Enabled` を有効にすると、入力済みのプロンプトから関連するプロンプトを追加して生成します（NSFW で特に強力です）。
-- **`Update.bat` で EasyReforge を更新します。**
+	- 画像生成で問題が発生したら『[画像生成のトラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0#%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』へ。
 - **起動時の設定状態は `Settings` の左下にある `Other` - `Defaults` で変更できます。**
 	- `View changes` で変更内容を確認して、`Apply` で保存します。
 	- 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を退避してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
 - UI の日本語併記を止めるには `Settings` にある `Bilingual Localization` の `Localization file` を `None` にして、`Apply settings` と `Reload UI` をしてください。
+- 起動時にコマンドラインオプションを指定したい場合は `Reforge_ArgSample_DarkTheme.bat` をコピーして、ファイル内の `--theme dark` を書き換えます。
+- **`Update.bat` で EasyReforge を更新します。**
+	- 更新で問題が発生したら『[更新のトラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0#%E6%9B%B4%E6%96%B0%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』へ。
 
 ### 追加データのダウンロード
 
@@ -85,18 +86,11 @@ E-Pred に戻すときも同様です。
 1. `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して、`📋` と `↙` で適用します。
 1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
 
-## トラブルシューティング（仮）
-
-- 初回の画像生成では問題がないが 2枚目以降で Runtime Error が発生する場合
-	- `Reforge_ArgSample_CudaMemOpts.bat` で起動するとエラーが発生しない場合があります。
-	- 画面左下の `Never OOM Integrated` で `Enable VRAM Management` を有効にし、`Choose how VRAM is managed` を `Disabled` や他の値に変更するとエラーが発生しない場合があります。
-- `Update.bat` の更新でエラーが発生する場合
-	- `stable-diffusion-webui-reForge/venv/` を削除かリネームしてから `Update.bat` を実行してください。
-
 ## 最近の更新
 
 ### 2024/11/20
 
+- ドキュメントに『[トラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』を追加しました。
 - 『[ずっと遊べる TIPO のススメ](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Tipo.webp)』を公開しました。
 
 ### 2024/11/19
@@ -153,6 +147,9 @@ ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
 |:-:|:-:|
 
+## ドキュメント
+
+- [トラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
 
 ## ライセンス
 
