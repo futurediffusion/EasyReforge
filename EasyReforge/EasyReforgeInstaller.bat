@@ -43,6 +43,11 @@ if not exist %CURL_EXE% (
 )
 set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
+if exist %~dp0stable-diffusion-webui-reForge\ (
+	echo "%~dp0stable-diffusion-webui-reForge がすでに存在します。別のフォルダにインストールしてください。"
+	pause & exit /b 1
+)
+
 echo "動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）"
 echo "Download Model etc. Are you sure? [y/n] (default: y)"
 set /p DOWNLOAD_MDOEL_YES_OR_NO=
