@@ -89,6 +89,10 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/22
+
+- [HarmoniqMixSpo_v21](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x) のダウンロードに対応しました。
+
 ### 2024/11/21
 
 - [HarmoniqMixSpo_v20](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x), [HikariNoob_v065](https://huggingface.co/RedRayz/hikari_noob_0.6.5) [ObsessionV_v01](https://civitai.com/models/820208?modelVersionId=1080860) のダウンロードに対応しました。
