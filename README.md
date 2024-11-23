@@ -89,6 +89,11 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/23
+
+- デフォルトで CUDA メモリ最適化オプションを有効にして、`Reforge_CudaMemOpts.bat` を削除しました。
+	- CUDA メモリ最適化オプションで問題が発生する場合は `Reforge_NoOptions.bat` をご利用ください。
+
 ### 2024/11/22
 
 - [HarmoniqMixSpo_v21](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x),[illusobV05_v11](https://civitai.com/models/916130?modelVersionId=1069801) のダウンロードに対応しました。
