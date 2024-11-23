@@ -44,6 +44,7 @@
 - **起動時の設定状態は `Settings` の左下にある `Other` - `Defaults` で変更できます。**
 	- `View changes` で変更内容を確認して、`Apply` で保存します。
 	- 設定がよくわからなくなったら `stable-diffusion-webui-reForge/` にある `config.json`, `ui-config.json`, `styles.csv` を退避してから `EasyReforge.bat` を実行すると、初期状態にリセットします。
+- VRAM の少ない GPU では画面左下の `Never OOM Integrated` を有効にして、`Low VRAM` などを指定すると動作が快適になる可能性があります。
 - UI の日本語併記を止めるには `Settings` にある `Bilingual Localization` の `Localization file` を `None` にして、`Apply settings` と `Reload UI` をしてください。
 - 起動時にコマンドラインオプションを指定したい場合は `Reforge_ArgSample_DarkTheme.bat` をコピーして、ファイル内の `--theme dark` を書き換えます。
 - **`Update.bat` で EasyReforge を更新します。**
@@ -91,6 +92,8 @@ E-Pred に戻すときも同様です。
 
 ### 2024/11/23
 
+- [mokyu2106/iroiro_data](https://huggingface.co/datasets/mokyu2106/iroiro_data) の Noob で使える LECO をダウンロードする `Download/Lora/Noob_Leco/MokyuLeco.bat` を追加しました。
+	- Erase LECO ですので、LoRA ファイル名先頭のトリガーワードをプロンプトに追加し、LoRA 定義では `-10` ~ `-20` といった大きめの強度を指定します。
 - デフォルトで CUDA メモリ最適化オプションを有効にして、`Reforge_CudaMemOpts.bat` を削除しました。
 	- CUDA メモリ最適化オプションで問題が発生する場合は `Reforge_NoOptions.bat` をご利用ください。
 

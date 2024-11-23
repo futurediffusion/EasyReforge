@@ -48,6 +48,7 @@ if exist %~dp0stable-diffusion-webui-reForge\ (
 	pause & exit /b 1
 )
 
+echo "未成年の方は利用できません。"
 echo "動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）"
 echo "Download Model etc. Are you sure? [y/n] (default: y)"
 set /p DOWNLOAD_MDOEL_YES_OR_NO=
