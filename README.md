@@ -1,7 +1,7 @@
 ﻿# EasyReforge
 
 [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) でお手軽に高速画像生成する EasyReforge です。  
-[NoobAi](https://civitai.com/models/833294) の Epsilon-Prediction 版 (NoobE) と V-Prediction 版 (NoobV) を主に扱います。
+[NoobAi](https://civitai.com/models/833294) の Epsilon-Prediction 版 ( **NoobE** ) と V-Prediction 版 ( **NoobV** ) を主に扱います。
 
 - ワンクリックインストール
 - Geforce RTX 3060 VRAM 12GB で FullHD を 10秒で生成するプリセット
@@ -93,6 +93,7 @@ E-Pred に戻すときも同様です。
 ### 2024/11/23
 
 - [mokyu2106/iroiro_data](https://huggingface.co/datasets/mokyu2106/iroiro_data) の Noob で使える LECO をダウンロードする `Download/Lora/Noob_Leco/MokyuLeco.bat` を追加しました。
+	- NoobE と NoobV の両方で使えます。
 	- Erase LECO ですので、LoRA ファイル名先頭のトリガーワードをプロンプトに追加し、LoRA 定義では `-10` ~ `-20` といった大きめの強度を指定します。
 - デフォルトで CUDA メモリ最適化オプションを有効にして、`Reforge_CudaMemOpts.bat` を削除しました。
 	- CUDA メモリ最適化オプションで問題が発生する場合は `Reforge_NoOptions.bat` をご利用ください。
