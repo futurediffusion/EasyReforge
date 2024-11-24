@@ -12,6 +12,7 @@ class ReforgeUiConfig:
             "0.1.0": self.update_0_1_0,
             "0.1.1": self.update_0_1_1,
             "0.1.2": self.update_0_1_2,
+            "0.1.3": self.update_0_1_3,
         }
 
         if not os.path.exists(cfg_path):
@@ -70,7 +71,7 @@ class ReforgeUiConfig:
 
         cfg["customscript/tipo.py/txt2img/Prompt Format/value"] = "tag only (DTG mode)"
         cfg["customscript/tipo.py/txt2img/Seed for upsampling tags/value"] = 0
-        # cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True
+        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True
         cfg["customscript/tipo.py/txt2img/Ban tags/value"] = "background, greyscale, monochrome"
 
         # cfg["customscript/dynamic_prompting.py/txt2img/Fixed seed/value"] = True
@@ -90,7 +91,7 @@ class ReforgeUiConfig:
     def update_0_1_0(self, cfg):
         cfg["easy_reforge_ui-config_version"] = "0.1.1"
 
-        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = False
+        # cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = False
         cfg["customscript/dynamic_prompting.py/txt2img/Fixed seed/value"] = False
 
         cfg["txt2img/Prompt/value"] = (
@@ -115,6 +116,11 @@ class ReforgeUiConfig:
         cfg["easy_reforge_ui-config_version"] = "0.1.3"
 
         cfg["customscript/lora_block_weight.py/txt2img/Active/value"] = True
+
+    def update_0_1_3(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.4"
+
+        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True  # GPU ではシードの再現性がなくなる
 
         # cfg["customscript/tipo.py/txt2img/Enabled/value"] = True
         # cfg["txt2img/Inpaint denoising strength/value"] = 0.3

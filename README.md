@@ -78,8 +78,8 @@
 
 - モデルや LoRA は `Model/` 以下に保存します。
 - 各サブフォルダの `LinkInput.bat` と `LinkOutput.bat` でモデルや LoRA を共有できます。
-  - EasyReforge から他の環境のモデルや LoRA を参照したい場合は、`LinkInput.bat` を実行してください。
-  - EasyReforge のモデルや LoRA を他の環境から参照したい場合は、`LinkOutput.bat` を実行してください。
+	- EasyReforge から他の環境のモデルや LoRA を参照したい場合は、`LinkInput.bat` を実行してください。
+	- EasyReforge のモデルや LoRA を他の環境から参照したい場合は、`LinkOutput.bat` を実行してください。
 
 ### V-Prediction を試す
 
@@ -103,6 +103,7 @@ E-Pred に戻すときも同様です。
 
 ### 2024/11/24
 
+- [NoobAiVPred_v065s](https://civitai.com/models/833294?modelVersionId=1093948), [NonameMix_v10](https://huggingface.co/Emanon14/NONAMEmix_v1) のダウンロードに対応しました。
 - [追加データのダウンロード](https://github.com/Zuntan03/EasyReforge/#追加データのダウンロード) に `Download/` 直下にある `bat` ファイルの説明を追加しました。
 
 ### 2024/11/23
