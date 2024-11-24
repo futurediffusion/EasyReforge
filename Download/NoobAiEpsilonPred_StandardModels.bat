@@ -1,6 +1,8 @@
 @echo off
 chcp 65001 > NUL
 
+@REM 最大 14項目 100GB 目安
+
 call %~dp0Stable-diffusion\NoobE\CuteNoobAI_v10.bat
 call %~dp0Stable-diffusion\NoobE\illusobXl_v10.bat
 call %~dp0Stable-diffusion\NoobE\LibrasIllustriousXL_v40a.bat

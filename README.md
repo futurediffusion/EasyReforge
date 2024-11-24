@@ -12,11 +12,12 @@
 
 ## インストール方法
 
-1. NVIDIA GPU の Windows PC で [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
-2. `C:/EasyReforge/` などの浅いインストール先フォルダで `EasyReforgeInstaller.bat` をダブルクリックして実行します。
-   - **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
+1.  [EasyReforgeInstaller.bat](https://github.com/Zuntan03/EasyReforge/raw/main/EasyReforge/EasyReforgeInstaller.bat?ver=0) を右クリックから保存します。
+	- NVIDIA GPU の Windows PC、20GB 以上の空きストレージ、PC の管理者権限、アバストなどの Windows Diffender でないウィルスチェック無効化、VPN の無効化が必要です。
+2. `C:/EasyReforge/` などの浅いパスのインストール先の空フォルダで、`EasyReforgeInstaller.bat` をダブルクリックして実行します。
+	- **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
 3. `動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）` で `Enter` します。
-4. インストールが問題なく終了したら [使い方](#使い方) へ。
+4. インストールが問題なく終了したら [使い方](https://github.com/Zuntan03/EasyReforge/#使い方) へ。
 
 **インストールで問題が発生したら『[インストールのトラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』へ。**
 
@@ -64,6 +65,14 @@
 	- `__MixedStyle__`: 混合スタイルワイルドカード
 	- `<lora:NoobEStylesDump:1> __NoobEStylesDump__`: スタイル LoRA とトリガーワイルドカード。V-Pred なら NoobE を NoobV にします。
 	- `<lora:NoobEStylesCollection:1> __NoobStylesCollection__`: スタイル LoRA とトリガーワイルドカード。V-Pred なら NoobE を NoobV にします。
+- `Download/` 直下の `bat` では追加データを一式ダウンロードできます。
+	- `NoobAiEpsilonPred`, `NoobAiVPred`: [NoobAi](https://civitai.com/models/833294) の Epsilon-Prediction 版、V-Prediction 版の関連ファイルをダウンロードします。最初は扱いが簡単な `NoobAiEpsilonPred` がオススメです。
+	- `Minimum`: 画像生成ができる最低限の関連ファイルをダウンロードします。`Minimum` のみ、下記の Civitai キー設定をしなくてもダウンロードできます。
+	- `Standard`: `Minimum` に加えて、モデル以外の標準的な関連ファイルをダウンロードします。LoRA や ADetailer 検出モデルや Wildcard など、容量に対して効果が大きいモノが多いため、Civitai キーを登録してのダウンロードを推奨します。
+	- `StandardModels`: `Standard` に加えて、合計 100GB 以下の定番オススメモデルをダウンロードします。
+	- `All`: すべての関連ファイルをダウンロードします。
+	- サブフォルダの `bat` で個別のダウンロードもできます。
+	- モデルや LoRA は日々新しいモノが公開されますので、[Civitai](https://civitai.com/) で気になったモノを `Civitai Helper` でダウンロードしたり、`Civitai Helper Browser` で直接ダウンロードしてください（Civitai キー設定が必要）。
 
 ### 他の環境とのリソース共有
 
@@ -77,7 +86,7 @@
 **NoobAI の V-Prediction 版は開発中です。**  
 **現時点では V-Prediction & ZTSNR に対応した高速化 LoRA も存在しないため、強引な対応により品質が落ちています（が、その代わりに 3060 で FullHD を 10秒で生成できます）。**
 
-[追加データのダウンロード](#追加データのダウンロード) で Civitai キーを設定してから、`Download/` にある `NoobAiVPred_StandardModels.bat` で V-Pred のモデルや LoRA をダウンロードします。
+[追加データのダウンロード](https://github.com/Zuntan03/EasyReforge/#追加データのダウンロード) で Civitai キーを設定してから、`Download/` にある `NoobAiVPred_StandardModels.bat` で V-Pred のモデルや LoRA をダウンロードします。
 
 1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を有効にします。
 	- V-Pred や ZTSNR 自動判定機能は派生モデルで正常に動作しない場合があるようですのでご注意ください。
@@ -91,6 +100,10 @@ E-Pred に戻すときも同様です。
 1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
 
 ## 最近の更新
+
+### 2024/11/24
+
+- [追加データのダウンロード](https://github.com/Zuntan03/EasyReforge/#追加データのダウンロード) に `Download/` 直下にある `bat` ファイルの説明を追加しました。
 
 ### 2024/11/23
 
@@ -157,6 +170,10 @@ ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` 
 - NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。生成情報付きサンプル  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE_Unique/PVCStyleModelMovable_v10_0.webp)
 - 上記サンプルで意図的に入力したプロンプトは `santa costume, fashion magazine cover, night, snow` のみで、あとはワイルドカードと TIPO 補完です。
+
+### 2024/11/15
+
+- 公開
 
 ## 参考画像
 
