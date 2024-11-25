@@ -101,6 +101,14 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/26
+
+- [HarmoniqMixSpo_v22](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x) のダウンロードに対応しました。
+
+### 2024/11/25
+
+- [illusobV_v16](https://civitai.com/models/916130?modelVersionId=1094353) のダウンロードに対応しました。
+
 ### 2024/11/24
 
 - [NoobAiVPred_v065s](https://civitai.com/models/833294?modelVersionId=1093948), [NonameMix_v10](https://huggingface.co/Emanon14/NONAMEmix_v1) のダウンロードに対応しました。
