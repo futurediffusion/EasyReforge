@@ -103,6 +103,7 @@ E-Pred に戻すときも同様です。
 
 ### 2024/11/26
 
+- [nashikone/iroiroLoRA](https://huggingface.co/nashikone/iroiroLoRA) の LoRA バンドルのダウンロードに対応しました。
 - [HarmoniqMixSpo_v22](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x) のダウンロードに対応しました。
 
 ### 2024/11/25
