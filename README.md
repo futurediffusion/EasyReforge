@@ -101,6 +101,10 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/27
+
+- [illusobV_v165s](https://civitai.com/models/916130?modelVersionId=1094356) のダウンロードに対応しました。
+
 ### 2024/11/26
 
 - [nashikone/iroiroLoRA](https://huggingface.co/nashikone/iroiroLoRA) の LoRA バンドルのダウンロードに対応しました。
