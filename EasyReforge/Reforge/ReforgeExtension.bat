@@ -2,6 +2,7 @@
 chcp 65001 > NUL
 set EASY_TOOLS=%~dp0..\..\EasyTools
 set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
+set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
 pushd %~dp0..\..\stable-diffusion-webui-reForge\extensions
 
@@ -88,6 +89,14 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
 call %GITHUB_CLONE_OR_PULL% zixaphir Stable-Diffusion-Webui-Civitai-Helper master
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM https://github.com/Bocchi-Chan2023/stable-diffusion-webui-wd14-tagger
+call %GITHUB_CLONE_OR_PULL% Bocchi-Chan2023 stable-diffusion-webui-wd14-tagger master
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+echo %CURL_CMD% -o stable-diffusion-webui-wd14-tagger\tagger\utils.py https://gist.githubusercontent.com/Zuntan03/ec9010bef0f8fce5b752facd3f8053f0/raw
+%CURL_CMD% -o stable-diffusion-webui-wd14-tagger\tagger\utils.py https://gist.githubusercontent.com/Zuntan03/ec9010bef0f8fce5b752facd3f8053f0/raw
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM https://github.com/KohakuBlueleaf/z-tipo-extension
 call %GITHUB_CLONE_OR_PULL% KohakuBlueleaf z-tipo-extension main

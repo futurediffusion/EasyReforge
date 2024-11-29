@@ -13,6 +13,7 @@ class ReforgeUiConfig:
             "0.1.1": self.update_0_1_1,
             "0.1.2": self.update_0_1_2,
             "0.1.3": self.update_0_1_3,
+            "0.1.4": self.update_0_1_4,
         }
 
         if not os.path.exists(cfg_path):
@@ -121,6 +122,11 @@ class ReforgeUiConfig:
         cfg["easy_reforge_ui-config_version"] = "0.1.4"
 
         cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True  # GPU ではシードの再現性がなくなる
+
+    def update_0_1_4(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.5"
+
+        cfg["tagger/Interrogator/value"] = "WD EVA02-Large Tagger v3"
 
         # cfg["customscript/tipo.py/txt2img/Enabled/value"] = True
         # cfg["txt2img/Inpaint denoising strength/value"] = 0.3
