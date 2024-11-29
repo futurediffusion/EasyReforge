@@ -98,6 +98,11 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/30
+
+- Tagger によるタグ付けに対応しました。
+	- 新しい `WD EVA02-Large Tagger v3` や、e621 タグの `Z3D-E621-Convnext` も使えます。
+
 ### 2024/11/29
 
 - `NoobAiVPred_v065s` や派生モデルを高速化する [NoobV065sHyperDmd](https://huggingface.co/Zuntan/NoobHyperDmd) に対応しました。
