@@ -27,8 +27,6 @@
 |:-:|:-:|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_02_VPred.webp)||
 
-
-
 ### 基本操作
 
 - EasyReforge インストール先にある `Reforge.bat` で起動します。
