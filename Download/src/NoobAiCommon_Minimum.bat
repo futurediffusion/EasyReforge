@@ -32,5 +32,6 @@ call %~dp0..\All\ESRGAN.bat
 @REM call %~dp0..\ControlNet\Sdxl\Kataragi_inpaintXL-lora128.bat
 @REM call %~dp0..\ControlNet\Sdxl\TTPLANET_Controlnet_Tile_realistic_v2_rank256.bat
 
+call %~dp0..\Lora\Noob_Boost\NoobV065sHyperDmd.bat
 call %~dp0..\Lora\Sdxl_Boost\dmd2_sdxl_4step.bat
 call %~dp0..\Lora\Sdxl_Boost\Hyper_sdxl_8step.bat

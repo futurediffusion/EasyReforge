@@ -23,12 +23,11 @@
 
 ## 使い方
 
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)|
+|:-:|:-:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_02_VPred.webp)||
 
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Tipo.webp)
 
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid1_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid2_4K.webp)|
-|:-:|:-:|:-:|
 
 ### 基本操作
 
@@ -101,6 +100,15 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+### 2024/11/29
+
+- `NoobAiVPred_v065s` や派生モデルを高速化する [NoobV065sHyperDmd](https://huggingface.co/Zuntan/NoobHyperDmd) に対応しました。
+	- `Advanced Model Sampling` を有効にして、NoobV 系モデルと `NoobV` プリセットでご利用ください。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_02_VPred.webp)  |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/VpredZtsnr.webp)|
+|:-:|:-:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobV065s0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobV065s1_4K.webp)|
+
 ### 2024/11/27
 
 - [illusobV_v165s](https://civitai.com/models/916130?modelVersionId=1094356) のダウンロードに対応しました。
@@ -138,7 +146,7 @@ E-Pred に戻すときも同様です。
 ### 2024/11/20
 
 - ドキュメントに『[トラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』を追加しました。
-- 『[ずっと遊べる TIPO のススメ](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Tipo.webp)』を公開しました。
+- 『[ずっと遊べる TIPO のススメ](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)』を公開しました。
 
 ### 2024/11/19
 
@@ -197,6 +205,11 @@ ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` 
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
 |:-:|:-:|
+
+TIPO でのバリエーション生成
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid1_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid2_4K.webp)|
+|:-:|:-:|:-:|
 
 ## ドキュメント
 
