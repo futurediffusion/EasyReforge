@@ -102,8 +102,11 @@ E-Pred に戻すときも同様です。
 
 ### 2024/11/30
 
+- [NonameMix_v11](https://huggingface.co/Emanon14/NONAMEmix_v1) のダウンロードに対応しました。
 - Tagger によるタグ付けに対応しました。
 	- 新しい `WD EVA02-Large Tagger v3` や、e621 タグの `Z3D-E621-Convnext` も使えます。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/Tagger.webp)
 
 ### 2024/11/29
 
