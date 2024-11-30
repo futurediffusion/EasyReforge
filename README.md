@@ -98,6 +98,8 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新
 
+**reForge の更新状況は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/dev/) 。**
+
 ### 2024/11/30
 
 - Tagger によるタグ付けに対応しました。
