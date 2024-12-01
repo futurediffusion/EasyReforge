@@ -102,6 +102,8 @@ E-Pred に戻すときも同様です。
 
 ### 2024/12/01
 
+- Windows の長いパス対応が無効だと、Huggingface からのバンドルダウンロードに失敗する場合があります。
+	- `Download/Lora/Noob_Bundle/*.bat` によるダウンロードに失敗する場合は、Windows の管理者権限で `EasyTools/EnableLongPaths.bat` を実行してください。
 - [NoobAiEpsilonPred_v11](https://huggingface.co/Laxhar/noobai-XL-1.1), [NonameMixL_v11](https://huggingface.co/Emanon14/NONAMEmix_v1), [NtrMix_v40](https://civitai.com/models/926443?modelVersionId=1061268), [WaiShuffleNoob_v10](https://civitai.com/models/989367?modelVersionId=1108388), [susamixV_v31](https://civitai.com/models/944769?modelVersionId=1114026) のダウンロードに対応しました。
 - 「NegPiP が効いてないかも？」の声を見かけたので確認しました。
 	- 2列目で帽子がなく、3~4列目にあれば効果があります。
