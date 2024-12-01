@@ -96,7 +96,7 @@ E-Pred に戻すときも同様です。
 1. `DMD2[4]: LCM, SGM Uniform 📋↙` を選択して、`📋` と `↙` で適用します。
 1. 左下にある `Advanced Model Sampling for reForge` を開いて `Enable Advanced Model Sampling` を無効にします。
 
-## 最近の更新
+## 最近の更新内容
 
 **reForge の更新状況は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/dev/) 。**
 
@@ -133,111 +133,13 @@ E-Pred に戻すときも同様です。
 |:-:|:-:|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobV065s0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobV065s1_4K.webp)|
 
-### 2024/11/27
+[過去の更新内容](https://github.com/Zuntan03/EasyReforge/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9)（参考画像もこちらにあります。）
 
-- [illusobV_v165s](https://civitai.com/models/916130?modelVersionId=1094356) のダウンロードに対応しました。
-
-### 2024/11/26
-
-- [nashikone/iroiroLoRA](https://huggingface.co/nashikone/iroiroLoRA) の LoRA バンドルのダウンロードに対応しました。
-- [HarmoniqMixSpo_v22](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x) のダウンロードに対応しました。
-
-### 2024/11/25
-
-- [illusobV_v16](https://civitai.com/models/916130?modelVersionId=1094353) のダウンロードに対応しました。
-
-### 2024/11/24
-
-- [NoobAiVPred_v065s](https://civitai.com/models/833294?modelVersionId=1093948), [NonameMix_v10](https://huggingface.co/Emanon14/NONAMEmix_v1) のダウンロードに対応しました。
-- [追加データのダウンロード](https://github.com/Zuntan03/EasyReforge/#追加データのダウンロード) に `Download/` 直下にある `bat` ファイルの説明を追加しました。
-
-### 2024/11/23
-
-- [mokyu2106/iroiro_data](https://huggingface.co/datasets/mokyu2106/iroiro_data) の Noob で使える LECO をダウンロードする `Download/Lora/Noob_Leco/MokyuLeco.bat` を追加しました。
-	- NoobE と NoobV の両方で使えます。
-	- Erase LECO ですので、LoRA ファイル名先頭のトリガーワードをプロンプトに追加し、LoRA 定義では `-10` ~ `-20` といった大きめの強度を指定します。
-- デフォルトで CUDA メモリ最適化オプションを有効にして、`Reforge_CudaMemOpts.bat` を削除しました。
-	- CUDA メモリ最適化オプションで問題が発生する場合は `Reforge_NoOptions.bat` をご利用ください。
-
-### 2024/11/22
-
-- [HarmoniqMixSpo_v21](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x),[illusobV05_v11](https://civitai.com/models/916130?modelVersionId=1069801) のダウンロードに対応しました。
-
-### 2024/11/21
-
-- [HarmoniqMixSpo_v20](https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x), [HikariNoob_v065](https://huggingface.co/RedRayz/hikari_noob_0.6.5), [ObsessionV_v01](https://civitai.com/models/820208?modelVersionId=1080860) のダウンロードに対応しました。
-
-### 2024/11/20
-
-- ドキュメントに『[トラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』を追加しました。
-- 『[ずっと遊べる TIPO のススメ](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)』を公開しました。
-
-### 2024/11/19
-
-- Civitai からの DL ができない不具合を修正しました。
-- プリセットに `DMD2[4]: DPM++ 2S a, SGM Uniform 📋↙` を追加しました。
-- [HarmoniqMixSpoEx_v11](https://huggingface.co/hybskgks28275/checkpoint) のダウンロードに対応しました。
-- ダークテーマを設定する起動オプションサンプルの `Reforge_ArgSample_DarkTheme.bat` を追加しました。
-
-### 2024/11/18
-
-- [NoobAiVPredIterComp_v06](https://civitai.com/models/935739?modelVersionId=1071682), [copycatNoobV_v06](https://civitai.com/models/894218?modelVersionId=1073042) のダウンロードに対応しました。
-- [sd-webui-ar](https://github.com/alemelis/sd-webui-ar) を [sd-webui-ar-plusplus](https://github.com/altoiddealer/--sd-webui-ar-plusplus) に変更しました。
-- [sd-webui-lora-block-weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) を [sd-webui-lora-block-weight-reforge](https://github.com/Panchovix/sd-webui-lora-block-weight-reforge) に変更しました。
-
-[NoobAiVPred_v06](https://civitai.com/models/833294?modelVersionId=1070239) と [HarmoniqMixSpo_v11](https://huggingface.co/hybskgks28275/checkpoint) のサンプラ・スケジューラ例
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler1_2.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper1_2.webp)|
-|:-:|:-:|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/NoobAiVPred_v06-Sampler0_2.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/HarmoniqMixSpo_v11-Samper0_2.webp)|
-
-
-### 2024/11/17
-
-- [NoobAiVPred_v06](https://civitai.com/models/833294?modelVersionId=1070239), [HarmoniqMixSpo_v11](https://huggingface.co/hybskgks28275/checkpoint) のダウンロードに対応しました。
-- スタイルの運用を変更しました。
-- UI の日本語併記を有効にしました。
-	- UI の日本語併記を止めるには `Settings` にある `Bilingual Localization` の `Localization file` を `None` にして、`Apply settings` と `Reload UI` をしてください。
-- 拡張機能の [Sigmas merge](https://github.com/Panchovix/reForge-Sigmas_merge) を追加しました。
-- 画像の出力先フォルダを `Output/Reforge` から `OutputReforge` に変更しました。
-	- 古い `Output/` は不要ですので削除してください。
-
-### 2024/11/16
-
-- サンプル画像を `Samples/` に含めます。  
-**サンプル画像を `PNG Info` の `Send to txt2img` で読み込んだ際には、スタイル欄が空欄であることを確認してください。**  
-ADetailerやAdvanced Model Sampling for reForgeの設定が、`Send to txt2img` では有効にならない点もご注意ください。
-- 直近の [Forge Couple の更新](https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953) でエラーが発生していたため巻き戻しました。
-- バッチ生成時に同一シードになっていた問題を修正しました。
-- HarmoniqMix_v10 のパス変更に対応し、HarmoniqMixSpo_v10 を追加しました。
-- NoobV に [PersonalMergeVLow_v05](https://civitai.com/models/835655?modelVersionId=1064266) と [PersonalMergeVNormal_v05](https://civitai.com/models/835655?modelVersionId=1065716)を追加しました。  
-**Low は高速化 LoRA の dmd2XL は不要です。** 生成情報付きサンプル  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVPersonalMergeV_v05_0.webp)
-- NoobE に [PVCStyleModelMovable_v10](https://civitai.com/models/338712?modelVersionId=1026901) を追加しました。生成情報付きサンプル  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE_Unique/PVCStyleModelMovable_v10_0.webp)
-- 上記サンプルで意図的に入力したプロンプトは `santa costume, fashion magazine cover, night, snow` のみで、あとはワイルドカードと TIPO 補完です。
-
-### 2024/11/15
-
-- 公開
-
-## 参考画像
-
-柔軟なスタイル選択
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobVMixStyle.webp)
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobE/NoobEMixStyle1.webp)|
-|:-:|:-:|
-
-TIPO でのバリエーション生成
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid1_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/TipoGrid2_4K.webp)|
-|:-:|:-:|:-:|
 
 ## ドキュメント
 
 - [トラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
+- [過去の更新内容](https://github.com/Zuntan03/EasyReforge/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9)
 
 ## ライセンス
 
