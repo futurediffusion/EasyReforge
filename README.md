@@ -102,12 +102,12 @@ E-Pred に戻すときも同様です。
 
 ### 2024/12/01
 
-- [NoobAiEpsilonPred_v11](https://huggingface.co/Laxhar/noobai-XL-1.1) のダウンロードに対応しました。
+- [NoobAiEpsilonPred_v11](https://huggingface.co/Laxhar/noobai-XL-1.1), [NonameMixL_v11](https://huggingface.co/Emanon14/NONAMEmix_v1), [NtrMix_v40](https://civitai.com/models/926443?modelVersionId=1061268), [WaiShuffleNoob_v10](https://civitai.com/models/989367?modelVersionId=1108388), [susamixV_v31](https://civitai.com/models/944769?modelVersionId=1114026) のダウンロードに対応しました。
 - 「NegPiP が効いてないかも？」の声を見かけたので確認しました。
 	- 2列目で帽子がなく、3~4列目にあれば効果があります。
 	- モデルなどによって効果にバラツキがあり、運が悪いと効果なしに見えちゃうかもですね。
 	- V-Pred の方が効果が安定してる感があります。
-	- 高速化 LoRA 利用環境での確認です。  
+	- 高速化 LoRA 利用環境での確認です。
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/Noob/NegPipNoobE_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/Noob/NegPipNoobV_4K.webp)|
 |:-:|:-:|
