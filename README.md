@@ -100,6 +100,19 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新状況は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/dev/) 。**
 
+### 2024/12/01
+
+- 「NegPiP が効いてないかも？」の声を見かけたので確認しました。
+	- 2列目で帽子がなく、3~4列目にあれば効果があります。
+	- モデルなどによって効果にバラツキがあり、運が悪いと効果なしに見えちゃうかもですね。
+	- V-Pred の方が効果が安定してる感があります。
+	- 高速化 LoRA 利用環境での確認です。  
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/Noob/NegPipNoobE_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/Noob/NegPipNoobV_4K.webp)|
+|:-:|:-:|
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/NegPipUi.webp)
+
 ### 2024/11/30
 
 - [NonameMix_v11](https://huggingface.co/Emanon14/NONAMEmix_v1) のダウンロードに対応しました。
