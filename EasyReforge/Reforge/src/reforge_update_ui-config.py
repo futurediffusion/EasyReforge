@@ -14,6 +14,7 @@ class ReforgeUiConfig:
             "0.1.2": self.update_0_1_2,
             "0.1.3": self.update_0_1_3,
             "0.1.4": self.update_0_1_4,
+            "0.1.5": self.update_0_1_5,
         }
 
         if not os.path.exists(cfg_path):
@@ -128,11 +129,15 @@ class ReforgeUiConfig:
 
         cfg["tagger/Interrogator/value"] = "WD EVA02-Large Tagger v3"
 
+    def update_0_1_5(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.6"
+
+        cfg["txt2img/Inpaint denoising strength/value"] = 0.3
+        cfg["txt2img/Inpaint denoising strength 2nd/value"] = 0.3
+        cfg["txt2img/Inpaint denoising strength 3rd/value"] = 0.3
+        cfg["txt2img/Inpaint denoising strength 4th/value"] = 0.3
+
         # cfg["customscript/tipo.py/txt2img/Enabled/value"] = True
-        # cfg["txt2img/Inpaint denoising strength/value"] = 0.3
-        # cfg["txt2img/Inpaint denoising strength 2nd/value"] = 0.3
-        # cfg["txt2img/Inpaint denoising strength 3rd/value"] = 0.3
-        # cfg["txt2img/Inpaint denoising strength 4th/value"] = 0.3
 
 
 if __name__ == "__main__":
