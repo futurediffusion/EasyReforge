@@ -98,13 +98,14 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新内容
 
-**reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/dev/) 。**
+**reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
 ### 2024/12/02
 
 - EasyReforge で使用する reForge のブランチを `dev` から `main` に変更しました。
-	- `dev` の ControlNet のマスクが効かない不具合が回避できますが、他の不具合が新たに発生するかもしれません。
-	- 不具合があるようでしたら、`Reforge/` にある `ReforgeSwitchDev.bat` と `ReforgeSwitchMain.bat` でブランチを切り替えられます。
+	- `dev` の ControlNet のマスクが効かない不具合を回避できますが、他の機能に問題がある可能性もあります。
+	- `dev` にしたい場合は `Reforge/` にある `ReforgeSwitchDev.bat` で戻せます。  
+	`main` にしたい場合は `ReforgeSwitchMain.bat` です。
 
 ### 2024/12/01
 

@@ -5,7 +5,7 @@ set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
 
 pushd %~dp0..\..
 
-echo https://github.com/Panchovix/stable-diffusion-webui-reForge/tree/dev
+@REM echo https://github.com/Panchovix/stable-diffusion-webui-reForge/tree/dev
 @REM https://github.com/Panchovix/stable-diffusion-webui-reForge/
 call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
