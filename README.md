@@ -102,7 +102,7 @@ E-Pred に戻すときも同様です。
 
 ### 2024/12/03
 
-- [HarmoniqMixSpoE_v10](https://huggingface.co/hybskgks28275/HarmoniqMix_ePred_v1.x) のダウンロードに対応しました。
+- [HarmoniqMixSpoE_v10](https://huggingface.co/hybskgks28275/HarmoniqMix_ePred_v1.x), [ColourfulTart_v10](https://civitai.com/models/997743?modelVersionId=1118059) のダウンロードに対応しました。
 - VAE の [XlVaeC_f2](https://civitai.com/models/152040?modelVersionId=719135), [AaaAnime_v15](https://civitai.com/models/888145?modelVersionId=1042046) のダウンロードに対応しました。
 - ControlNet の `NoobE_LineartRealistic`, `NoobE_MangaLine`, `NoobE_Openpose_pre`, `NoobE_ScribbleHed`, `NoobE_ScribblePidinet`, `NoobE_SoftedgeHed` のダウンロードに対応しました。
 	- `Download/All/ControlNet_NoobE.bat` でまとめてダウンロードできます。

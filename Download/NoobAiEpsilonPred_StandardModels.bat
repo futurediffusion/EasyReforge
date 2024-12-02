@@ -14,6 +14,7 @@ call %~dp0Stable-diffusion\NoobE\WaiShuffleNoob_v10.bat
 
 call %~dp0Stable-diffusion\NoobE_Real\PornMasterPro_v02.bat
 
+call %~dp0Stable-diffusion\NoobE_Unique\ColourfulTart_v10.bat
 call %~dp0Stable-diffusion\NoobE_Unique\PVCStyleModelMovable_v10.bat
 
 call %~dp0Stable-diffusion\NoobE_Base\NoobAiEpsilonPred_v11.bat
