@@ -106,6 +106,7 @@ E-Pred に戻すときも同様です。
 	- `dev` の ControlNet のマスクが効かない不具合を回避できますが、他の機能に問題がある可能性もあります。
 	- `dev` にしたい場合は `Reforge/` にある `ReforgeSwitchDev.bat` で戻せます。  
 	`main` にしたい場合は `ReforgeSwitchMain.bat` です。
+- ControlNet の `NoobE_Canny`, `NoobE_DepthMidas_v11`, `NoobE_LineartAnime`, `NoobE_NormalMidas` を fp16 版に変更しました。
 
 ### 2024/12/01
 
