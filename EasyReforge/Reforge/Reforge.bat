@@ -13,8 +13,12 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 popd
 pushd %~dp0..\..\stable-diffusion-webui-reForge
 
-@REM dev ブランチへの切り替え
+@REM @REM dev ブランチへの切り替え
 @REM git switch -C dev origin/dev
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+@REM @REM main ブランチへの切り替え extensions-builtin/reForge-advanced_model_sampling(_backported) が無い環境仮対策
+@REM git switch -C main origin/main
 @REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 call %EASY_TOOLS%\Python\Python_Activate.bat
@@ -26,6 +30,11 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 echo pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
 pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+@REM CN Pidinet ModuleNotFoundError: No module named 'basicsr'
+echo pip install -qq basicsr==1.4.2
+pip install -qq basicsr==1.4.2
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM fixed ImportError: cannot import name 'cached_download' from 'huggingface_hub'

@@ -100,6 +100,21 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2024/12/03
+
+- [HarmoniqMixSpoE_v10](https://huggingface.co/hybskgks28275/HarmoniqMix_ePred_v1.x) のダウンロードに対応しました。
+- VAE の [XlVaeC_f2](https://civitai.com/models/152040?modelVersionId=719135), [AaaAnime_v15](https://civitai.com/models/888145?modelVersionId=1042046) のダウンロードに対応しました。
+- ControlNet の `NoobE_LineartRealistic`, `NoobE_MangaLine`, `NoobE_Openpose_pre`, `NoobE_ScribbleHed`, `NoobE_ScribblePidinet`, `NoobE_SoftedgeHed` のダウンロードに対応しました。
+	- `Download/All/ControlNet_NoobE.bat` でまとめてダウンロードできます。
+- [TIPO](https://x.com/Zuntan03/status/1859018166770520479) でスポーツを指定するといろんな競技になるらしいので試してみました。
+	- (sports ware, alternate costume, playing sports: 1.3) と競技名は未指定です。
+	- 競技の偏りに対しては Ban tags で対処できます。
+	- ついでにリアル系のモデルやプロンプトを、NoobE の新プリセットでお試しです。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_1_4K.webp)|
+|:-:|:-:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_2_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_3_4K.webp)|
+
 ### 2024/12/02
 
 - EasyReforge で使用する reForge のブランチを `dev` から `main` に変更しました。

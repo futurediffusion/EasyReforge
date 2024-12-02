@@ -4,4 +4,4 @@ chcp 65001 > NUL
 call %~dp0src\NoobAiCommon_Minimum.bat
 
 call %~dp0Stable-diffusion\NoobV\HarmoniqMixSpo_v22.bat
-call %~dp0Stable-diffusion\NoobV\HikariNoob_v065.bat
+call %~dp0Stable-diffusion\NoobV\CatTower_v12.bat

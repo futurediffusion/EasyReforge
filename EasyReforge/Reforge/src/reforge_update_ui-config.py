@@ -97,8 +97,9 @@ class ReforgeUiConfig:
         cfg["customscript/dynamic_prompting.py/txt2img/Fixed seed/value"] = False
 
         cfg["txt2img/Prompt/value"] = (
-            "1girl, rem \\(re:zero\\), re:zero kara hajimeru isekai seikatsu,\nofficial style,\nsanta costume, indoors,\n<lora:dmd2_sdxl_4step:1>masterpiece, best quality, newest, absurdres, safe\n# 起動時の設定を変更したい場合は、設定を変更して Settings - Defaults の Apply"
+            "1girl, rem \\(re:zero\\), re:zero kara hajimeru isekai seikatsu,\nofficial style,\nsanta costume, indoors,\n<lora:NoobV065sHyperDmd:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe\n# 起動時の設定を変更したい場合は、設定を変更して Settings - Defaults の Apply"
         )
+
         cfg["txt2img/Negative prompt/value"] = "bad anatomy, worst quality, low quality"
         cfg["txt2img/Styles/value"] = []
 

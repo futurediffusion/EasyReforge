@@ -8,7 +8,7 @@ if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
 pushd %~dp0..\stable-diffusion-webui-reForge
 
-@REM dev ブランチへの切り替え
+@REM main ブランチへの切り替え
 git switch -C main origin/main
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
