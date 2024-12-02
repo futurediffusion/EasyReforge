@@ -14,8 +14,8 @@ popd
 pushd %~dp0..\..\stable-diffusion-webui-reForge
 
 @REM dev ブランチへの切り替え
-git switch -C dev origin/dev
-if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+@REM git switch -C dev origin/dev
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 call %EASY_TOOLS%\Python\Python_Activate.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
