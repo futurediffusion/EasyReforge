@@ -72,11 +72,12 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 call :MOVE_TO_BACKUP sd-webui-lora-block-weight
-call :MOVE_TO_BACKUP ..\extensions-builtin\sd-webui-lora-block-weight-reforge
+call :MOVE_TO_BACKUP sd-webui-lora-block-weight-reforge
+@REM call :MOVE_TO_BACKUP ..\extensions-builtin\sd-webui-lora-block-weight-reforge
 
 @REM https://github.com/Panchovix/sd-webui-lora-block-weight-reforge
-call %GITHUB_CLONE_OR_PULL% Panchovix sd-webui-lora-block-weight-reforge main
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+@REM call %GITHUB_CLONE_OR_PULL% Panchovix sd-webui-lora-block-weight-reforge main
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/hako-mikan/sd-webui-negpip
 call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main
