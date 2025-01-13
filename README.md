@@ -100,6 +100,13 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/01/13
+
+- ['PuLIDMode' is not defined.](https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/236) の不具合対処のため、reForge を 2025/01/10 バージョンに固定しました。
+- `Hires CFG Scale` の追加に対応しました。デフォルト設定で崩れていた絵が修正されます。  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2501/HiresCfg.webp)
+- TIPO のモデルを `TIPO-200M-ft2-F16.gguf` に更新しました。
+
 ### 2024/12/03
 
 - [HarmoniqMixSpoE_v10](https://huggingface.co/hybskgks28275/HarmoniqMix_ePred_v1.x), [ColourfulTart_v10](https://civitai.com/models/997743?modelVersionId=1118059) のダウンロードに対応しました。
