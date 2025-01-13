@@ -100,9 +100,16 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/01/14
+
+- 以下のモデルのバージョンを更新しました。ダウンロード時のストレージ消費にご注意ください。
+	- NoobE: `copycatNoob_v11`, `HarmoniqMixSpoE_v11`, `momiziNoob_v31`, `NtrMix_vXIII`, `Obsession_v31`, `WaiShuffleNoob_v20`, `PornMasterPro_v10`, `PVCStyleModelMovable_v12`
+	- NoobV: `CatTower_v15`, `copycatNoobV_v101`, `HarmoniqMixSpo_v30`, `HikariNoob_v101`, `ObsessionV_v10`, `susamixV_v40`, `NoobAiVPred_v10`, `PVCStyleModelMovableV_v10`
+
 ### 2025/01/13
 
 - ['PuLIDMode' is not defined.](https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/236) の不具合対処のため、reForge を 2025/01/10 バージョンに固定しました。
+	- 修正されたので最新を追うように戻しました。
 - `Hires CFG Scale` の追加に対応しました。デフォルト設定で崩れていた絵が修正されます。  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2501/HiresCfg.webp)
 - TIPO のモデルを `TIPO-200M-ft2-F16.gguf` に更新しました。

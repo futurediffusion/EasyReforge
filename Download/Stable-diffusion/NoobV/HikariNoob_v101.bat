@@ -4,8 +4,8 @@ set EASY_TOOLS=%~dp0..\..\..\EasyTools
 set HUGGING_FACE=%EASY_TOOLS%\Download\HuggingFace.bat
 pushd %~dp0..\..\..\Model\Stable-diffusion
 
-@REM https://huggingface.co/hybskgks28275/HarmoniqMix_vPred_v2.x
-call %HUGGING_FACE% NoobV\ HarmoniqMixSpo_v22.safetensors hybskgks28275/HarmoniqMix_vPred_v2.x HarmoniqMix_vPred_v22_SPO/HarmoniqMix_vPred_v22_SPO.safetensors?
+@REM https://huggingface.co/RedRayz/hikari_noob_1.0.1
+call %HUGGING_FACE% NoobV\ HikariNoob_v101.safetensors RedRayz/hikari_noob_1.0.1 Hikari_Noob_v-pred_1.0.1.safetensors?
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem %~dp0..\..\..\Model\Stable-diffusion

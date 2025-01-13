@@ -7,8 +7,7 @@ pushd %~dp0..\..
 
 @REM echo https://github.com/Panchovix/stable-diffusion-webui-reForge/tree/dev
 @REM https://github.com/Panchovix/stable-diffusion-webui-reForge/
-@REM https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/236
-call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main 0211354da20aa1bc3d4c02b3eb5adaf637d0f1d0
+call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd
