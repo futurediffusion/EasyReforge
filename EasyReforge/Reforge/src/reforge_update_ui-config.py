@@ -16,6 +16,7 @@ class ReforgeUiConfig:
             "0.1.4": self.update_0_1_4,
             "0.1.5": self.update_0_1_5,
             "0.1.6": self.update_0_1_6,
+            "0.1.7": self.update_0_1_7,
         }
 
         if not os.path.exists(cfg_path):
@@ -146,6 +147,10 @@ class ReforgeUiConfig:
         cfg["txt2img/Hires CFG Scale/value"] = 1.0
         cfg["customscript/tipo.py/txt2img/Model/value"] = "KBlueLeaf/TIPO-200M-ft2 | TIPO-200M-ft2-F16.gguf"
         cfg["customscript/tipo.py/img2img/Model/value"] = "KBlueLeaf/TIPO-200M-ft2 | TIPO-200M-ft2-F16.gguf"
+
+    def update_0_1_7(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.8"
+        cfg["txt2img/Hires CFG Scale/value"] = 0.0
 
 
 if __name__ == "__main__":
