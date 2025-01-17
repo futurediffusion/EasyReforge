@@ -100,6 +100,10 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/01/17
+
+- ControlNet に `NoobE_Tile` を追加しました。
+
 ### 2025/01/14
 
 - 以下のモデルのバージョンを更新しました。ダウンロード時のストレージ消費にご注意ください。
