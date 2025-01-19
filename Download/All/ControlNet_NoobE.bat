@@ -4,3 +4,5 @@ set EASY_TOOLS=%~dp0..\..\EasyTools
 set RECURSIVE_BAT_CALL=%EASY_TOOLS%\Bat\RecursiveBatCall.bat
 
 call "%RECURSIVE_BAT_CALL%" "%~dp0..\ControlNet\NoobE"
+call "%RECURSIVE_BAT_CALL%" "%~dp0..\ControlNet\Pony"
+call "%RECURSIVE_BAT_CALL%" "%~dp0..\ControlNet\Sdxl"

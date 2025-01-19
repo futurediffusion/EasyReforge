@@ -38,6 +38,7 @@
 		- **Latent 系 Hires. fix x1.5 の利用が前提のプリセットです。**
 		- プロンプト末尾の safe は TIPO 用のレーティング指定です。  
 		TIPO を利用しない場合は削除してください（金庫が生成される場合があります）。
+		- 高速化 LoRA なしの通常の設定を利用したい場合は `Normal[28+]: Euler a, Normal 📋↙️` を適用します。
 	- プロンプト入力欄下の `TIPO` を開いて `Enabled` を有効にすると、入力済みのプロンプトから関連するプロンプトを追加して生成します（NSFW で特に強力です）。
 		- 評価の高い NSFW を試すには `safe` を `explicit` に書き換えます。
 	- 画像生成で問題が発生したら『[画像生成のトラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0#%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』へ。
@@ -99,6 +100,12 @@ E-Pred に戻すときも同様です。
 ## 最近の更新内容
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
+
+### 2025/01/19
+
+- NoobV モデルの `ElMichael_v10` と `ZipanoobDmd_v11` を追加しました。
+- ControlNet モデルの `AnyTest_PonyDim256_v40` と `Inpaint_Kataragi` を追加しました。
+- [モノを消す](https://x.com/Zuntan03/status/1660197068143747077) `LamaCleaner.bat` と、メタ残しモザイク付与の `Mosaic.bat` を追加しました。
 
 ### 2025/01/17
 
