@@ -25,6 +25,7 @@
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)|
 |:-:|:-:|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint_Lama.webp)|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_02_VPred.webp)||
 
 ### 基本操作
@@ -100,6 +101,15 @@ E-Pred に戻すときも同様です。
 ## 最近の更新内容
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
+
+### 2025/01/20
+
+- ControlNet の inpaint と anytest を txt2img で組み合わせた、img2img より自由度の高い書き換え手法に対応しました。
+	- [Pony での同様の手法](https://x.com/Zuntan03/status/1799226583590547912) を Noob でも扱えるようにしました。
+	- 例以外にも表情差分、衣服差分、剥ぎコラなどが可能です。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint_Lama.webp)|
+|:-:|:-:|
 
 ### 2025/01/19
 

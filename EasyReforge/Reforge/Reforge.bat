@@ -42,4 +42,8 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 @REM pip install -qq peft==0.13.2 huggingface-hub==0.25.2
 @REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+if not exist extensions-builtin\sd_forge_controlnet\presets\ ( mkdir extensions-builtin\sd_forge_controlnet\presets )
+echo xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
+xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
+
 popd
