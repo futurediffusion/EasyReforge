@@ -17,20 +17,9 @@ call %~dp0..\adetailer\segm\PitHandDetailer-v1b-seg.bat
 
 call %~dp0..\All\ESRGAN.bat
 
-@REM call %~dp0..\ControlNet\Pony\CN-anytest_v3-50000_pn_dim8.bat
-@REM call %~dp0..\ControlNet\Pony\CN-anytest_v3-50000_pn_dim64.bat
-@REM call %~dp0..\ControlNet\Pony\CN-anytest_v3-50000_pn_dim256.bat
-@REM call %~dp0..\ControlNet\Pony\CN-anytest_v4-marged_pn_dim64.bat
-@REM call %~dp0..\ControlNet\Pony\CN-anytest_v4-marged_pn_dim256.bat
-
-@REM call %~dp0..\ControlNet\Sdxl\CN-anytest_v3-50000_am_dim8.bat
-@REM call %~dp0..\ControlNet\Sdxl\CN-anytest_v3-50000_am_dim64.bat
-@REM call %~dp0..\ControlNet\Sdxl\CN-anytest_v3-50000_am_dim256.bat
-@REM call %~dp0..\ControlNet\Sdxl\CN-anytest_v4-marged_am_dim64.bat
-@REM call %~dp0..\ControlNet\Sdxl\CN-anytest_v4-marged_am_dim256.bat
-@REM call %~dp0..\ControlNet\Sdxl\cnlllite-anystyle_v3-step00005000.bat
-@REM call %~dp0..\ControlNet\Sdxl\Kataragi_inpaintXL-lora128.bat
-@REM call %~dp0..\ControlNet\Sdxl\TTPLANET_Controlnet_Tile_realistic_v2_rank256.bat
+call %~dp0..\ControlNet\Sdxl\Inpaint_Kataragi.bat
+call %~dp0..\ControlNet\Pony\AnyTest_PonyDim256_v40.bat
+@REM call %~dp0..\ControlNet\NoobE\NoobE_Tile.bat
 
 call %~dp0..\Lora\Noob_Boost\NoobV065sHyperDmd.bat
 call %~dp0..\Lora\Sdxl_Boost\dmd2_sdxl_4step.bat

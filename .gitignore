@@ -1,4 +1,5 @@
 ﻿/EasyTools/
+/EasyReforge/Reforge/Update_DisableMinimumDownload.txt
 /Model/**/*
 !/Model/**/*.bat
 /OutputReforge/

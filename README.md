@@ -106,10 +106,13 @@ E-Pred に戻すときも同様です。
 
 - ControlNet の inpaint と anytest を txt2img で組み合わせた、img2img より自由度の高い書き換え手法に対応しました。
 	- [Pony での同様の手法](https://x.com/Zuntan03/status/1799226583590547912) を Noob でも扱えるようにしました。
-	- 例以外にも表情差分、衣服差分、剥ぎコラなどが可能です。
+	- 例以外にも表情差分、衣装差分、剥ぎコラなどが可能です。
 
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint_Lama.webp)|
 |:-:|:-:|
+
+- `EasyReforge/Update_DisableMinimumDownload.bat` で更新時の最小ダウンロードを無効化できるようにしました。
+	- 元に戻すには `EasyReforge/Update_EnableMinimumDownload.bat` です。
 
 ### 2025/01/19
 
