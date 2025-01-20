@@ -102,6 +102,10 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/01/21
+
+- `MatureRitual_v20` を追加しました。
+
 ### 2025/01/20
 
 - ControlNet の inpaint と anytest を txt2img で組み合わせた、img2img より自由度の高い書き換え手法に対応しました。

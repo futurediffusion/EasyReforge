@@ -21,6 +21,7 @@ call %~dp0Stable-diffusion\NoobE_Base\NoobAiEpsilonPred_v11.bat
 call %~dp0Stable-diffusion\NoobE_Real\PornMasterPro_v10.bat
 
 call %~dp0Stable-diffusion\NoobE_Unique\ColourfulTart_v10.bat
+call %~dp0Stable-diffusion\NoobE_Unique\MatureRitual_v20.bat
 call %~dp0Stable-diffusion\NoobE_Unique\PVCStyleModelMovable_v12.bat
 
 call %~dp0NoobAiEpsilonPred_Standard.bat
