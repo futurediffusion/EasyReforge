@@ -102,6 +102,10 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/01/22
+
+- `Reforge.bat` の起動オプションから、低 VRAM 環境で OoM を引き起こすことがある `--cuda-stream` を削除しました。
+
 ### 2025/01/21
 
 - `MatureRitual_v20` を追加しました。
