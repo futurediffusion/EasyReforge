@@ -105,6 +105,9 @@ E-Pred に戻すときも同様です。
 ### 2025/02/01
 
 - [Emanon さんの LoRA](https://huggingface.co/Emanon14/LoRA) を一括ダウンロードする `Download/Lora/Noob_Bundle/Emanon.bat` を追加しました。
+- ワイルドカードに [Laxhar/noob-wiki](https://huggingface.co/datasets/Laxhar/noob-wiki) の 1girl ソロ画像 100枚以上でフィルタした `noob_1girl.txt` を追加しました。
+	- `1girl, __noob_1girl__,` などでご利用ください。
+- `Download\Stable-diffusion\NoobE_Unique\MatureRitual_v03e.bat` を追加しました。
 
 ### 2025/01/22
 

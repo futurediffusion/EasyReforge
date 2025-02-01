@@ -24,3 +24,5 @@ call %~dp0..\ControlNet\Pony\AnyTest_PonyDim256_v40.bat
 call %~dp0..\Lora\Noob_Boost\NoobV065sHyperDmd.bat
 call %~dp0..\Lora\Sdxl_Boost\dmd2_sdxl_4step.bat
 call %~dp0..\Lora\Sdxl_Boost\Hyper_sdxl_8step.bat
+
+call %~dp0..\wildcards\noob_1girl.bat
