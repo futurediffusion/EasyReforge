@@ -5,6 +5,6 @@ set ARIA=%EASY_TOOLS%\Download\Aria.bat
 pushd %~dp0..\..\Model\wildcards
 
 call %ARIA% .\ noob_1girl.txt https://yyy.wpx.jp/EasyReforge/noob_1girl.txt
-if %ERRORLEVEL% neq 0 ( exit /b 1)
+if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
 popd rem %~dp0..\..\..\Model\wildcards
