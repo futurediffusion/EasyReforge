@@ -102,6 +102,10 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/02/01
+
+- [Emanon さんの LoRA](https://huggingface.co/Emanon14/LoRA) を一括ダウンロードする `Download/Lora/Noob_Bundle/Emanon.bat` を追加しました。
+
 ### 2025/01/22
 
 - `Reforge.bat` の起動オプションから、低 VRAM 環境で OoM を引き起こすことがある `--cuda-stream` を削除しました。
