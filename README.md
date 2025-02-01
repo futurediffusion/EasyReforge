@@ -102,6 +102,13 @@ E-Pred に戻すときも同様です。
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**
 
+### 2025/02/02
+
+- ワイルドカードの `__noob_1girl__` の生成画像をダウンロードする `Sample/noob_1girl.bat` を追加しました。
+
+|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid0.webp)|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid1.webp)|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid2.webp)|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid3.webp)|
+|:-:|:-:|:-:|:-:|
+
 ### 2025/02/01
 
 - [Emanon さんの LoRA](https://huggingface.co/Emanon14/LoRA) を一括ダウンロードする `Download/Lora/Noob_Bundle/Emanon.bat` を追加しました。
