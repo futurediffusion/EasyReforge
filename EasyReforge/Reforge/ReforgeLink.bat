@@ -26,6 +26,11 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %JUNCTION% extensions\sd-dynamic-prompts\wildcards ..\Model\wildcards 
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+if not exist ..\Model\wildcards\1girl.txt ( copy /Y %~dp0src\1girl.txt ..\Model\wildcards\ )
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+if not exist ..\Model\wildcards\play.txt ( copy /Y %~dp0src\play.txt ..\Model\wildcards\ )
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
 if not exist outputs\txt2img-images\ ( mkdir outputs\txt2img-images )
 if not exist outputs\img2img-images\ ( mkdir outputs\img2img-images )
 if not exist outputs\extras-images\ ( mkdir outputs\extras-images )

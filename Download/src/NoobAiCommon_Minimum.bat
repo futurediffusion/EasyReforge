@@ -26,3 +26,5 @@ call %~dp0..\Lora\Sdxl_Boost\dmd2_sdxl_4step.bat
 call %~dp0..\Lora\Sdxl_Boost\Hyper_sdxl_8step.bat
 
 call %~dp0..\wildcards\noob_1girl.bat
+call %~dp0..\wildcards\tipo_1girl.bat
+call %~dp0..\wildcards\tipo_play.bat

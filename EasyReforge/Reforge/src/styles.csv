@@ -1,13 +1,18 @@
 ﻿name,prompt,negative_prompt
-"👤Char","__Booru1girl__ # __NsfwPony/char__",
-"🎨StyleE","__MixedStyle__ # <lora:NoobEStylesCollection:1> __NoobStylesCollection__ # <lora:NoobEStylesDump:1> __NoobEStylesDump__",
-"🎨StyleV","__MixedStyle__ # <lora:NoobVStylesCollection:1> __NoobStylesCollection__ # <lora:NoobVStylesDump:1> __NoobVStylesDump__",
+"👤Char 📋","__noob_1girl__ #__Booru1girl__, __NsfwPony/char__",
 "NoobE HyDmd[4]: LCM, SGM Uniform 📋↙️","<lora:NoobV065sHyperDmd:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
 "NoobV HyDmd[4]: RES Solver, Beta 📋↙️","<lora:NoobV065sHyperDmd:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: RES Solver, Schedule type: Beta",
+"Normal[28+]: Euler a, Normal 📋↙️","masterpiece, best quality, very aesthetic, absurdres, newest, safe, # explicit, uncensored,
+Negative prompt: bad anatomy, worst quality, low quality
+Steps: 28, CFG scale: 5.5, Sampler: Euler a, Schedule type: Normal",
+"TIPO 1girl play 📋","<lora:NoobV065sHyperDmd:1>1girl, __1girl__, __play__, solo, masterpiece, newest, absurdres, highres, explicit",
+"TIPO 1girl play [Sample] 📋","<lora:NoobV065sHyperDmd:1>1girl, __tipo_1girl__, __tipo_play__, solo, masterpiece, newest, absurdres, highres, explicit",
+"🎨StyleE 📋","__MixedStyle__ # <lora:NoobEStylesCollection:1> __NoobStylesCollection__ # <lora:NoobEStylesDump:1> __NoobEStylesDump__",
+"🎨StyleV 📋","__MixedStyle__ # <lora:NoobVStylesCollection:1> __NoobStylesCollection__ # <lora:NoobVStylesDump:1> __NoobVStylesDump__",
 "DMD2[4]: LCM, SGM Uniform 📋↙️","<lora:dmd2_sdxl_4step:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
@@ -23,6 +28,3 @@ Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upsca
 "Hyper[10+]: Euler a, SGM Uniform 📋↙️","<lora:Hyper_sdxl_8step:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe, # explicit, uncensored,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 10, CFG scale: 2, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: Euler a, Schedule type: SGM Uniform",
-"Normal[28+]: Euler a, Normal 📋↙️","masterpiece, best quality, very aesthetic, absurdres, newest, safe, # explicit, uncensored,
-Negative prompt: bad anatomy, worst quality, low quality
-Steps: 28, CFG scale: 5.5, Sampler: Euler a, Schedule type: Normal",

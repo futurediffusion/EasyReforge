@@ -17,6 +17,7 @@ class ReforgeUiConfig:
             "0.1.5": self.update_0_1_5,
             "0.1.6": self.update_0_1_6,
             "0.1.7": self.update_0_1_7,
+            "0.1.8": self.update_0_1_8,
         }
 
         if not os.path.exists(cfg_path):
@@ -151,6 +152,14 @@ class ReforgeUiConfig:
     def update_0_1_7(self, cfg):
         cfg["easy_reforge_ui-config_version"] = "0.1.8"
         cfg["txt2img/Hires CFG Scale/value"] = 0.0
+
+    def update_0_1_8(self, cfg):
+        cfg["easy_reforge_ui-config_version"] = "0.1.9"
+        cfg["customscript/tipo.py/txt2img/Model/value"] = "KBlueLeaf/TIPO-500M-ft | TIPO-500M-ft-F16.gguf"
+        cfg["customscript/tipo.py/img2img/Model/value"] = "KBlueLeaf/TIPO-500M-ft | TIPO-500M-ft-F16.gguf"
+        cfg["customscript/tipo.py/txt2img/Ban tags/value"] = (
+            "background, greyscale, monochrome, hair, eyes, multiple view, censor, pubic"
+        )
 
 
 if __name__ == "__main__":
