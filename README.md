@@ -109,6 +109,49 @@ E-Pred に戻すときも同様です。
 	- noob_1girl 画像からのキャラのプロンプトの取得は、ファイル名よりも PNG Info などで画像のメタ情報から取得したほうが楽です。
 - 更新で編集したスタイルが巻き戻った場合は、stable-diffusion-webui-reForge\sytles.csv の横にある日付付きバックアップファイルからコピペして復元してください。
 
+以下はテキスト欄の内容です。
+
+モデルは矛盾のある TIPO プロンプトでも絵が崩れにくい NoobE 系モデルがおすすめです。  
+右のスタイル欄で 『TIPO 1girl play [Sample] 📋』 を選択して 📋でサンプルプロンプトを貼り付けて TIPO を『有効化』して生成してみてください。
+
+`<lora:NoobV065sHyperDmd:1>1girl, __tipo_1girl__, __tipo_play__, solo, masterpiece, newest, absurdres, highres, explicit,`  
+↑ 『`TIPO 1girl play [Sample] 📋`』 `Model/wildcards/` にある `tipo_1girl.txt` と `tipo_play.txt` によるサンプルです。  
+`tipo_1girl.txt` と `tipo_play.txt` の組み合わせから、TIPO によるプロンプト補完で幅広い画像が生成されます。
+
+----
+`<lora:NoobV065sHyperDmd:1>1girl, __1girl__, __play__, solo, masterpiece, newest, absurdres, highres, explicit,`  
+↑ 『`TIPO 1girl play 📋`』 `Model/wildcards/` にある `1girl.txt` と `play.txt` に、好みのキャラとプレイのプロンプトを追加します。  
+`1girl.txt` と `play.txt` を自分用に編集することで、お好みの画像を無限に生成できるようになります。 
+
+`1girl.txt` は  `Sample/noob_1girl.bat` を実行してDLされた画像のファイル名や生成情報から、知っているキャラを `tipo_1girl.txt` を参考にしつつ追加します。  
+作品名などのカッコ `(` `)` の前には `\`（バックスラッシュまたは円マーク）が必要 `\(` `\)`ですので、`PNG Info` などで生成情報からコピペしたほうが荒くです。
+
+`tipo_1girl.txt` の最初のように LoRA のキャラ追加もできます。  
+`Download\Lora\NoobE_Char\Medalist_HikaruKamisaki_v10.bat` で LoRA をダウンロード して、行頭の `#` を削除してコメントを解除すれば LoRA のキャラを試せます。
+
+`2girls, {2$$__1girl__}, yuri` などとすることで、打率は落ちますがランダムな 2 キャラの組み合わせもできます。
+
+----
+`play.txt` は好きなプレイのプロンプトを、`tipo_play.txt` や気に入った画像などを参考にしつつ追加します。  
+ネット上の好みのメタ情報付き画像から、キーとなるプロンプトを追加することもできます。
+
+TIPO で補完する前提ですので、細かなプロンプトは不要です。  
+こだわりのプロンプトを積み上げることもできますが、TIPO による変化の幅は狭まります（が、キャラが変わるだけでも新鮮です）。
+
+`1girl.txt` や `play.txt` とは別のテキストファイルを用意して、使い分けたり組み合わせたりできます。
+
+`(anime, anime coloring, anime screenshot: 1.2)`  
+画風はモデルを差し替えたり、プロンプトで補助したりで変更できます。
+
+----
+`background, greyscale, monochrome, hair, eyes, multiple view, censor, pubic, testicles, pointy, elf`
+
+`background`: `simple background` や `white background` を防ぐ  
+`greyscale`, `monochrome`: モノクロ防止  
+`hair, eyes`: 髪や目の色はキャラプロンプトで決める  
+`multiple view`: コマ割り防止、`[1-5]koma` なんかもよい  
+`censor, pubic, testicles, pointy, elf`: 勝手に修正や毛や玉やエルフ耳を追加しない
+
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcard.webp)
 
 ### 2025/02/02
