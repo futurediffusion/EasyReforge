@@ -106,6 +106,8 @@ E-Pred に戻すときも同様です。
 ### 2025/02/03
 
 - 『TIPO で好みの画像を無限生成』のチートシートを追加しました。
+	- noob_1girl 画像からのキャラのプロンプトの取得は、ファイル名よりも PNG Info などで画像のメタ情報から取得したほうが楽です。
+- 更新で編集したスタイルが巻き戻った場合は、stable-diffusion-webui-reForge\sytles.csv の横にある日付付きバックアップファイルからコピペして復元してください。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcard.webp)
 
