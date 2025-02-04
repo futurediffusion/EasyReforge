@@ -103,6 +103,13 @@ E-Pred に戻すときも同様です。
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/04
+
+- 拡張機能の [`sd-webui-detail-daemon`](https://github.com/muerrilla/sd-webui-detail-daemon) を追加しました。
+- `buildin` の `sd-webui-lora-block-weight` が削除されたのに伴い `hako-mikan` をインストールするようにしました。
+- `sd-webui-negpip`, `sd-webui-cd-tuner` のチェック状態が保存されない問題への対処のために、
+- 不具合が修正されたので、`sd-forge-couple` の最新版を利用するように戻しました。
+
 ### 2025/02/03
 
 - 『TIPO で好みの画像を無限生成』のチートシートを追加しました。
@@ -153,122 +160,6 @@ TIPO で補完する前提ですので、細かなプロンプトは不要です
 `censor, pubic, testicles, pointy, elf`: 勝手に修正や毛や玉やエルフ耳を追加しない
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcard.webp)
-
-### 2025/02/02
-
-- ワイルドカードの `__noob_1girl__` の生成画像をダウンロードする `Sample/noob_1girl.bat` を追加しました。
-
-|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid0.webp)|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid1.webp)|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid2.webp)|![](https://yyy.wpx.jp/EasyReforge/noob_1girl_grid3.webp)|
-|:-:|:-:|:-:|:-:|
-
-### 2025/02/01
-
-- [Emanon さんの LoRA](https://huggingface.co/Emanon14/LoRA) を一括ダウンロードする `Download/Lora/Noob_Bundle/Emanon.bat` を追加しました。
-- ワイルドカードに [Laxhar/noob-wiki](https://huggingface.co/datasets/Laxhar/noob-wiki) の 1girl ソロ画像 100枚以上でフィルタした `noob_1girl.txt` を追加しました。
-	- `1girl, __noob_1girl__,` などでご利用ください。
-- モデルに `MatureRitual_v03e`, `LuminarQMix_v11`, `CopycatMr_v10` を追加しました。
-- モデルの `PornMasterPro_v15`, `HikariNoob_v11` を更新しました。
-
-### 2025/01/22
-
-- `Reforge.bat` の起動オプションから、低 VRAM 環境で OoM を引き起こすことがある `--cuda-stream` を削除しました。
-
-### 2025/01/21
-
-- `MatureRitual_v20` を追加しました。
-
-### 2025/01/20
-
-- ControlNet の inpaint と anytest を txt2img で組み合わせた、img2img より自由度の高い書き換え手法に対応しました。
-	- [Pony での同様の手法](https://x.com/Zuntan03/status/1799226583590547912) を Noob でも扱えるようにしました。
-	- 例以外にも表情差分、衣装差分、剥ぎコラなどが可能です。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint_Lama.webp)|
-|:-:|:-:|
-
-- `EasyReforge/Update_DisableMinimumDownload.bat` で更新時の最小ダウンロードを無効化できるようにしました。
-	- 元に戻すには `EasyReforge/Update_EnableMinimumDownload.bat` です。
-
-### 2025/01/19
-
-- NoobV モデルの `ElMichael_v10` と `ZipanoobDmd_v11` を追加しました。
-- ControlNet モデルの `AnyTest_PonyDim256_v40` と `Inpaint_Kataragi` を追加しました。
-- [モノを消す](https://x.com/Zuntan03/status/1660197068143747077) `LamaCleaner.bat` と、メタ残しモザイク付与の `Mosaic.bat` を追加しました。
-
-### 2025/01/17
-
-- ControlNet に `NoobE_Tile` を追加しました。
-- `Hires CFG Scale` の初期値を `0` に変更しました。
-
-### 2025/01/14
-
-- 以下のモデルのバージョンを更新しました。ダウンロード時のストレージ消費にご注意ください。
-	- NoobE: `copycatNoob_v11`, `HarmoniqMixSpoE_v11`, `momiziNoob_v31`, `NtrMix_vXIII`, `Obsession_v31`, `WaiShuffleNoob_v20`, `PornMasterPro_v10`, `PVCStyleModelMovable_v12`
-	- NoobV: `CatTower_v15`, `copycatNoobV_v101`, `HarmoniqMixSpo_v30`, `HikariNoob_v101`, `ObsessionV_v10`, `susamixV_v40`, `NoobAiVPred_v10`, `PVCStyleModelMovableV_v10`
-
-### 2025/01/13
-
-- ['PuLIDMode' is not defined.](https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/236) の不具合対処のため、reForge を 2025/01/10 バージョンに固定しました。
-	- 修正されたので最新を追うように戻しました。
-- `Hires CFG Scale` の追加に対応しました。デフォルト設定で崩れていた絵が修正されます。  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2501/HiresCfg.webp)
-- TIPO のモデルを `TIPO-200M-ft2-F16.gguf` に更新しました。
-
-### 2024/12/03
-
-- [HarmoniqMixSpoE_v10](https://huggingface.co/hybskgks28275/HarmoniqMix_ePred_v1.x), [ColourfulTart_v10](https://civitai.com/models/997743?modelVersionId=1118059) のダウンロードに対応しました。
-- VAE の [XlVaeC_f2](https://civitai.com/models/152040?modelVersionId=719135), [AaaAnime_v15](https://civitai.com/models/888145?modelVersionId=1042046) のダウンロードに対応しました。
-- ControlNet の `NoobE_LineartRealistic`, `NoobE_MangaLine`, `NoobE_Openpose_pre`, `NoobE_ScribbleHed`, `NoobE_ScribblePidinet`, `NoobE_SoftedgeHed` のダウンロードに対応しました。
-	- `Download/All/ControlNet_NoobE.bat` でまとめてダウンロードできます。
-- [TIPO](https://x.com/Zuntan03/status/1859018166770520479) でスポーツを指定するといろんな競技になるらしいので試してみました。
-	- (sports ware, alternate costume, playing sports: 1.3) と競技名は未指定です。
-	- 競技の偏りに対しては Ban tags で対処できます。
-	- ついでにリアル系のモデルやプロンプトを、NoobE の新プリセットでお試しです。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_1_4K.webp)|
-|:-:|:-:|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_2_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/sports_3_4K.webp)|
-
-### 2024/12/02
-
-- EasyReforge で使用する reForge のブランチを `dev` から `main` に変更しました。
-	- `dev` の ControlNet のマスクが効かない不具合を回避できますが、他の機能に問題がある可能性もあります。
-	- `dev` にしたい場合は `Reforge/` にある `ReforgeSwitchDev.bat` で戻せます。  
-	`main` にしたい場合は `ReforgeSwitchMain.bat` です。
-- ControlNet の `NoobE_Canny`, `NoobE_DepthMidas_v11`, `NoobE_LineartAnime`, `NoobE_NormalMidas` を fp16 版に変更しました。
-
-### 2024/12/01
-
-- Windows の長いパス対応が無効だと、Huggingface からのバンドルダウンロードに失敗する場合があります。
-	- `Download/Lora/Noob_Bundle/*.bat` によるダウンロードに失敗する場合は、Windows の管理者権限で `EasyTools/EnableLongPaths.bat` を実行してください。
-- [NoobAiEpsilonPred_v11](https://huggingface.co/Laxhar/noobai-XL-1.1), [NonameMixL_v11](https://huggingface.co/Emanon14/NONAMEmix_v1), [NtrMix_v40](https://civitai.com/models/926443?modelVersionId=1061268), [WaiShuffleNoob_v10](https://civitai.com/models/989367?modelVersionId=1108388), [PornMasterPro_v02](https://civitai.com/models/80473?modelVersionId=1115553), [CatTower_v12](https://civitai.com/models/920709?modelVersionId=1108042), [susamixV_v31](https://civitai.com/models/944769?modelVersionId=1114026) のダウンロードに対応しました。
-- 「NegPiP が効いてないかも？」の声を見かけたので確認しました。
-	- 2列目で帽子がなく、3~4列目にあれば効果があります。
-	- モデルなどによって効果にバラツキがあり、運が悪いと効果なしに見えちゃうかもですね。
-	- V-Pred の方が効果が安定してる感があります。
-	- 高速化 LoRA 利用環境での確認です。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/Noob/NegPipNoobE_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/Noob/NegPipNoobV_4K.webp)|
-|:-:|:-:|
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2412/NegPipUi.webp)
-
-### 2024/11/30
-
-- [NonameMix_v11](https://huggingface.co/Emanon14/NONAMEmix_v1) のダウンロードに対応しました。
-- Tagger によるタグ付けに対応しました。
-	- 新しい `WD EVA02-Large Tagger v3` や、e621 タグの `Z3D-E621-Convnext` も使えます。
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2411/Tagger.webp)
-
-### 2024/11/29
-
-- `NoobAiVPred_v065s` や派生モデルを高速化する [NoobV065sHyperDmd](https://huggingface.co/Zuntan/NoobHyperDmd) に対応しました。
-	- `Advanced Model Sampling` を有効にして、NoobV 系モデルと `NoobV` プリセットでご利用ください。
-
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_02_VPred.webp)  |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/VpredZtsnr.webp)|
-|:-:|:-:|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobV065s0_4K.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/NoobV/NoobV065s1_4K.webp)|
 
 [過去の更新内容](https://github.com/Zuntan03/EasyReforge/wiki/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9)（参考画像もこちらにあります。）
 

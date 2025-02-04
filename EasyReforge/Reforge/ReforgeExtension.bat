@@ -26,12 +26,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM 2024/11/15 JSON Decode Error
-@REM https://github.com/Haoming02/sd-forge-couple/commit/3925bc756e6bb221ee2b6326aea1594d40519953
-@REM ef08a705d69d538cd8c763e75250eec8225f5b22
+
 @REM https://github.com/Haoming02/sd-forge-couple
-@REM TODO: HEAD への再追従
-call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-couple main d157041bf7de425761fdf84611d9e358959cb066
+call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-couple main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/blue-pen5805/sdweb-easy-generate-forever
@@ -41,7 +38,6 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM https://github.com/alemelis/sd-webui-ar
 @REM call %GITHUB_CLONE_OR_PULL% alemelis sd-webui-ar main
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
 call :MOVE_TO_BACKUP sd-webui-ar
 
 @REM https://github.com/altoiddealer/--sd-webui-ar-plusplus
@@ -58,29 +54,27 @@ if not exist --sd-webui-ar-plusplus\aspect_ratios.txt (
 	copy %~dp0src\aspect_ratios.txt --sd-webui-ar-plusplus\
 )
 
+@REM チェック状態の保存ができない
 @REM https://github.com/hako-mikan/sd-webui-cd-tuner
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main 99baedb599da874f9ee389aa44383bdda448a340
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM https://github.com/muerrilla/sd-webui-detail-daemon
+call %GITHUB_CLONE_OR_PULL% muerrilla sd-webui-detail-daemon main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/hako-mikan/sd-webui-lora-block-weight
-@REM call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-lora-block-weight main
-@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
-@REM hako-mikan/sd-webui-lora-block-weight ver13 ブランチへの切り替え
-@REM https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/144
-@REM git -C sd-webui-lora-block-weight switch -C ver13 origin/ver13
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
-
-call :MOVE_TO_BACKUP sd-webui-lora-block-weight
-call :MOVE_TO_BACKUP sd-webui-lora-block-weight-reforge
-@REM call :MOVE_TO_BACKUP ..\extensions-builtin\sd-webui-lora-block-weight-reforge
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-lora-block-weight main
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Panchovix/sd-webui-lora-block-weight-reforge
 @REM call %GITHUB_CLONE_OR_PULL% Panchovix sd-webui-lora-block-weight-reforge main
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+call :MOVE_TO_BACKUP sd-webui-lora-block-weight-reforge
 
+@REM チェック状態の保存ができない
 @REM https://github.com/hako-mikan/sd-webui-negpip
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main 6ad0365f5a0ae8f66bc785f828a27720b8e6c3c2
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/nihedon/sd-webui-weight-helper
