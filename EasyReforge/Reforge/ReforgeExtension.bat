@@ -59,10 +59,6 @@ if not exist --sd-webui-ar-plusplus\aspect_ratios.txt (
 call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main 99baedb599da874f9ee389aa44383bdda448a340
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM https://github.com/muerrilla/sd-webui-detail-daemon
-call %GITHUB_CLONE_OR_PULL% muerrilla sd-webui-detail-daemon main
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
 @REM https://github.com/hako-mikan/sd-webui-lora-block-weight
 call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-lora-block-weight main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )

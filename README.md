@@ -105,7 +105,6 @@ E-Pred に戻すときも同様です。
 
 ### 2025/02/04
 
-- 拡張機能の [`sd-webui-detail-daemon`](https://github.com/muerrilla/sd-webui-detail-daemon) を追加しました。
 - `buildin` の `sd-webui-lora-block-weight` が削除されたのに伴い `hako-mikan` をインストールするようにしました。
 - `sd-webui-negpip`, `sd-webui-cd-tuner` のチェック状態が保存されない問題への対処のために、
 - 不具合が修正されたので、`sd-forge-couple` の最新版を利用するように戻しました。
