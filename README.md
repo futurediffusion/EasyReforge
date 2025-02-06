@@ -103,6 +103,11 @@ E-Pred に戻すときも同様です。
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/06
+
+- プロンプトなどのメタ情報を残しながら `*.jpg` や `*.webp` に変換できる、[SdImageDiet](https://github.com/nekotodance/SdImageDiet) に対応しました。
+	- `SdImageDiet.bat` を実行すると使えます。
+
 ### 2025/02/05
 
 - 『TIPO で好みの画像を無限生成 複数キャラ編』のチートシートを追加しました。
