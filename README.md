@@ -101,7 +101,13 @@ E-Pred に戻すときも同様です。
 ## 最近の更新内容
 
 **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
-**更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
+
+### 2025/02/09
+
+- 生成画像を自動更新して表示する `GenImageViewer.bat` を追加しました。
+- TIPO 用の場所指定ワイルドカード `__tipo_location__` を追加しました。
+- 生成画像のフォーマットを `webp` から `png` に変更しました。
+- **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
 ### 2025/02/06
 
