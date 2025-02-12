@@ -103,6 +103,11 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/12
+
+- reForge の最新版でランタイムエラーが発生するようですので、[昨日のリビジョン](https://github.com/Panchovix/stable-diffusion-webui-reForge/commit/8ac78f65c97908a25c3f47b5311cc7268ff79eea) に固定しました。
+	- `RuntimeError: config[i] == get()->name() INTERNAL ASSERT FAILED at "..\c10\cuda\CUDAAllocatorConfig.cpp":229, please report a bug to PyTorch. Allocator backend parsed at runtime != allocator backend parsed at load time`
+
 ### 2025/02/09
 
 - 生成画像を自動更新して表示する `GenImageViewer.bat` を追加しました。
