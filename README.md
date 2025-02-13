@@ -103,6 +103,14 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/13
+
+- NSFW なシチュエーションやプロンプトの相談に使える、ローカル LLM チャットを追加しました。
+	- 画像を生成しながらチャットする場合は、`Llm/7GB_LumimaidMagnum_v4_Cpu.bat` や `Llm/4GB_BerghofNsfw_Cpu.bat` をご利用ください。
+	- 画像を生成せずにチャットする場合は、`Llm/7GB_LumimaidMagnum_v4_Gpu.bat` や `Llm/4GB_BerghofNsfw_Gpu.bat` をご利用ください。
+	- 倫理面へのこだわりが `LumimaidMagnum_v4` と `BerghofNsfw` で異なるようですので、話題に合わせて使い分けてください。
+	- `*.gguf` ファイルを `Llm/99_ModelDragAndDrop_Cpu.bat` や `Llm/99_ModelDragAndDrop_Gpu.bat` にドラッグ＆ドロップすることで、お好みのモデルを利用できます。
+
 ### 2025/02/12
 
 - reForge の最新版でランタイムエラーが発生するようですので、[昨日のリビジョン](https://github.com/Panchovix/stable-diffusion-webui-reForge/commit/8ac78f65c97908a25c3f47b5311cc7268ff79eea) に固定しました。
