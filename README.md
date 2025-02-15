@@ -103,6 +103,15 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/16
+
+-  NSFW なシチュエーションやプロンプトの相談に使えるローカル LLM チャットに、`MinstralNemoJaRp_v02` を追加しました。
+	- ロールプレイモデルのため会話が多くなりがちですが、プロンプト指示である程度抑えられます。
+	- 会話内容への制約が緩い気がします。
+- `Download/Stable-diffusion/NoobE` にアニメモデルの [`AniKawa`](https://huggingface.co/Qnuk/Illustrious_Models_AniKawaXL) を追加しました。
+- `Download/Lora/NoobE_Style` にドット絵スタイルの [`DungeonSquadStyle_v30`](https://civitai.com/models/486237?modelVersionId=1399376) を追加しました。
+- Git がインストールされていない環境でインストールに失敗する不具合を修正しました。
+
 ### 2025/02/13
 
 - NSFW なシチュエーションやプロンプトの相談に使える、ローカル LLM チャットを追加しました。
