@@ -42,6 +42,11 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 @REM pip install -qq peft==0.13.2 huggingface-hub==0.25.2
 @REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+@REM reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
+echo pip install -qqq -r requirements_versions.txt
+pip install -qqq -r requirements_versions.txt
+cd > NUL
+
 if not exist extensions-builtin\sd_forge_controlnet\presets\ ( mkdir extensions-builtin\sd_forge_controlnet\presets )
 echo xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
 xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
