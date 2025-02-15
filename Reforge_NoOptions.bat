@@ -35,6 +35,7 @@ if %ERRORLEVEL% equ 0 (
 )
 if %ERRORLEVEL% neq 0 (
 	set GIT=%~dp0EasyTools\Git\env\PortableGit\bin\git.exe
+	call %~dp0EasyTools\Git\Get_SetPath.bat
 )
 
 @REM LBW bug: --api --enable-insecure-extension-access
