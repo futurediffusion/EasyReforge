@@ -103,6 +103,14 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/17
+
+- [`DungeonSquadStyle_v30`](https://civitai.com/models/486237?modelVersionId=1399376) の [出力例](https://www.pixiv.net/artworks/127330900) です。
+	- [リンク先](https://www.pixiv.net/artworks/127330900) のオリジナルサイズ画像を `PNG Info` にドラッグ＆ドロップすると、生成設定を確認できます。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/pixelart_0_h.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/pixelart_1_h.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/pixelart_2_h.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/pixelart_3_h.webp)|
+|:-:|:-:|:-:|:-:|
+
 ### 2025/02/16
 
 -  NSFW なシチュエーションやプロンプトの相談に使えるローカル LLM チャットに、`MinstralNemoJaRp_v02` を追加しました。
@@ -110,6 +118,7 @@ E-Pred に戻すときも同様です。
 	- 会話内容への制約が緩い気がします。
 - `Download/Stable-diffusion/NoobE` にアニメモデルの [`AniKawa`](https://huggingface.co/Qnuk/Illustrious_Models_AniKawaXL) を追加しました。
 - `Download/Lora/NoobE_Style` にドット絵スタイルの [`DungeonSquadStyle_v30`](https://civitai.com/models/486237?modelVersionId=1399376) を追加しました。
+- [`MatureRitual_v03e`](https://civitai.com/models/994401?modelVersionId=1345769) を [`MatureRitual_v04`](https://civitai.com/models/994401?modelVersionId=1418875) に更新しました。
 - Git がインストールされていない環境でインストールに失敗する不具合を修正しました。
 
 ### 2025/02/13

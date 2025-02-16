@@ -42,7 +42,7 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 @REM pip install -qq peft==0.13.2 huggingface-hub==0.25.2
 @REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-@REM reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
+@REM Git 未インストール環境にて reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
 echo pip install -qqq -r requirements_versions.txt
 pip install -qqq -r requirements_versions.txt
 cd > NUL
