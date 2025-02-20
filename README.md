@@ -103,6 +103,14 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/20
+
+- `CottonNoob_v10` モデルと、マンガ調にする `DoujinshiBooba` のダウンロードに対応しました。
+
+とても簡単にセリフを付けられる [FramePlanner](https://frameplanner-e5569.web.app/) を [お試し](https://www.pixiv.net/artworks/127444721)。
+
+[![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/4koma_w.webp)](https://www.pixiv.net/artworks/127444721)
+
 ### 2025/02/17
 
 - [`DungeonSquadStyle_v30`](https://civitai.com/models/486237?modelVersionId=1399376) の [出力例](https://www.pixiv.net/artworks/127330900) です。
