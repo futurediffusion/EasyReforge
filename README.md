@@ -27,6 +27,7 @@
 |:-:|:-:|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcard.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcardMulti.webp)|
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/FramePlanner.webp)||
 
 ### 基本操作
 
@@ -102,6 +103,15 @@ E-Pred に戻すときも同様です。
 
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
+
+### 2025/02/21
+
+- 『無料の [FramePlanner](https://frameplanner-e5569.web.app) で生成画像にセリフ付け』のチートシートを追加しました。
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/FramePlanner_0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/FramePlanner_1.webp)|
+|:-:|:-:|
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/FramePlanner.webp)
 
 ### 2025/02/20
 
