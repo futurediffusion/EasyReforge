@@ -104,6 +104,14 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/22
+
+- ForgeCoupleによる 2枚目の猫の日画像を 1枚目のように調整する手順です。
+	- [Twitter](https://x.com/Zuntan03/status/1893213352060416153)、[pixiv](https://www.pixiv.net/artworks/127508681)
+
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/CatDay_0.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/CatDay_1.webp)|
+|:-:|:-:|
+
 ### 2025/02/21
 
 - 『無料の [FramePlanner](https://frameplanner-e5569.web.app) で生成画像にセリフ付け』のチートシートを追加しました。
