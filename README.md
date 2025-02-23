@@ -104,6 +104,14 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/23
+
+- Geforce RTX 50x0 系を運良く入手できた方のための `Reforge_RTX50x0_PipTorch260Cu128.bat` を用意しました。
+	- [PyTorch 2.6.0 CUDA 12.8 の torch と torchvision](https://huggingface.co/w-e-w/torch-2.6.0-cu128.nv) をインストールします。
+	- **NVIDIA グラフィックスドライバのバージョンを `570.65` 以上にする必要があります。**
+	- **私は Geforce RTX 50x0 を所持していないため、動作確認はできていませんが、RTX 3060 12GB ではとりあえず生成できています。**
+	- 今のところは `Update.bat` 実行時にバージョンが巻き戻りますので、再実行してください。
+
 ### 2025/02/22
 
 - ForgeCoupleによる 2枚目の猫の日画像を 1枚目のように調整する手順です。
