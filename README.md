@@ -109,7 +109,8 @@ E-Pred に戻すときも同様です。
 - Geforce RTX 50x0 系を運良く入手できた方のための `Reforge_RTX50x0_PipTorch260Cu128.bat` を用意しました。
 	- [PyTorch 2.6.0 CUDA 12.8 の torch と torchvision](https://huggingface.co/w-e-w/torch-2.6.0-cu128.nv) をインストールします。
 	- **NVIDIA グラフィックスドライバのバージョンを `570.65` 以上にする必要があります。**
-	- **私は Geforce RTX 50x0 を所持していないため、動作確認はできていませんが、RTX 3060 12GB ではとりあえず生成できています。**
+	- **私は Geforce RTX 50x0 を所持していないため、動作確認はできていませんが、Geforce RTX 3060 12GB ではとりあえず画像を生成できています。**  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/Torch260Cuda128.png)
 	- 今のところは `Update.bat` 実行時にバージョンが巻き戻りますので、再実行してください。
 
 ### 2025/02/22
