@@ -111,6 +111,7 @@ E-Pred に戻すときも同様です。
 	- **NVIDIA グラフィックスドライバのバージョンを `570.65` 以上にする必要があります。**
 	- **私は Geforce RTX 50x0 を所持していないため、動作確認はできていませんが、Geforce RTX 3060 12GB ではとりあえず画像を生成できています。**  
 	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/Torch260Cuda128.png)
+	- **[PyTorch 2.6.0 では ADetailer が動作しない問題があるそうです（3060 環境でも再現）。](https://note.com/198619891990/n/n609b398d7de2)**
 	- 今のところは `Update.bat` 実行時にバージョンが巻き戻りますので、再実行してください。
 
 ### 2025/02/22
