@@ -73,6 +73,10 @@ call :MOVE_TO_BACKUP sd-webui-lora-block-weight-reforge
 call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main 6ad0365f5a0ae8f66bc785f828a27720b8e6c3c2
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/bluelovers/sd-webui-pnginfo-beautify
+call %GITHUB_CLONE_OR_PULL% bluelovers sd-webui-pnginfo-beautify master
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 @REM https://github.com/nihedon/sd-webui-weight-helper
 call %GITHUB_CLONE_OR_PULL% nihedon sd-webui-weight-helper main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )

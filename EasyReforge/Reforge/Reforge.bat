@@ -32,6 +32,11 @@ echo pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download
 pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+@REM できることが増えないがドライバに要求するバージョンが増える？
+@REM echo pip install -qq torch==2.5.1+cu124 torchvision --index-url https://download.pytorch.org/whl/cu124
+@REM pip install -qq torch==2.5.1+cu124 torchvision --index-url https://download.pytorch.org/whl/cu124
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
 @REM CN Pidinet ModuleNotFoundError: No module named 'basicsr'
 echo pip install -qq basicsr==1.4.2
 pip install -qq basicsr==1.4.2
@@ -44,8 +49,12 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM Git 未インストール環境にて reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
 if not exist extensions-backup\ (
-	echo pip install -qqq -r requirements_versions.txt
-	pip install -qqq -r requirements_versions.txt
+	@REM ADetailer の ("mediapipe", "0.10.13", "0.10.15"), による 0.10.14 が requirements_versions の protobuf-3.20.0 を拒否する
+	echo pip install -qq mediapipe==0.10.7
+	pip install -qq mediapipe==0.10.7
+
+	echo pip install -qq -r requirements_versions.txt
+	pip install -qq -r requirements_versions.txt
 	cd > NUL
 )
 

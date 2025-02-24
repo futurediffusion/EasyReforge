@@ -104,6 +104,12 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/24
+
+- 拡張機能に [sd-webui-pnginfo-beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) を追加しました。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/PngInfo.webp)
+
 ### 2025/02/23
 
 - Geforce RTX 50x0 系を運良く入手できた方のための `Reforge_RTX50x0_PipTorch260Cu128.bat` を用意しました。
