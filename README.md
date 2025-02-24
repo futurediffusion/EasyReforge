@@ -104,6 +104,12 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+
+### 2025/02/25
+
+- `Download/Stable-diffusion/NoobE_Real` に `UncannyValley_v10_LcmPolyexp` モデルを追加しました。
+	- HyperDmd との併用では `LCM` & `Polyexponential` の相性が良さげでした。
+
 ### 2025/02/24
 
 - スタイルで適用するクォリティタグを [NoobAI-XL User Manual](https://d0xb9r3fg5h.feishu.cn/docx/YpOQdtHTDoetcZxIO9fc33onnee) 準拠にしました。
