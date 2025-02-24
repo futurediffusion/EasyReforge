@@ -106,7 +106,10 @@ E-Pred に戻すときも同様です。
 
 ### 2025/02/24
 
-- `Download/Stable-diffusion/NoobE` に `songMix_v12` モデルを追加しました。
+- スタイルで適用するクォリティタグを [NoobAI-XL User Manual](https://d0xb9r3fg5h.feishu.cn/docx/YpOQdtHTDoetcZxIO9fc33onnee) 準拠にしました。
+	- `very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe # explicit`（general は NoobAI、safe は TIPO のレーティングです）
+	- スタイルを編集していた場合は巻き戻ります。お手数ですが `stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップからコピペで復元してください。
+- `Download/Stable-diffusion/NoobE` に [`songMix_v12`](https://civitai.com/models/1286421?modelVersionId=1455149) モデルを追加しました。
 - 拡張機能に [sd-webui-pnginfo-beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) を追加しました。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/PngInfo.webp)
