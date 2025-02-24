@@ -1,30 +1,30 @@
 ﻿name,prompt,negative_prompt
 "👤Char 📋","__noob_1girl__ #__Booru1girl__, __NsfwPony/char__",
-"NoobE HyDmd[4]: LCM, SGM Uniform 📋↙️","<lora:NoobV065sHyperDmd:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"NoobE HyDmd[4]: LCM, SGM Uniform 📋↙️","<lora:NoobV065sHyperDmd:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
-"NoobV HyDmd[4]: RES Solver, Beta 📋↙️","<lora:NoobV065sHyperDmd:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"NoobV HyDmd[4]: RES Solver, Beta 📋↙️","<lora:NoobV065sHyperDmd:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: RES Solver, Schedule type: Beta",
-"Normal[28+]: Euler a, Normal 📋↙️","very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"Normal[28+]: Euler a, Normal 📋↙️","very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 28, CFG scale: 5.5, Sampler: Euler a, Schedule type: Normal",
-"TIPO 1girl play 📋","<lora:NoobV065sHyperDmd:1>1girl, __1girl__, __play__, solo, very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, explicit",
-"TIPO 1girl play [Sample] 📋","<lora:NoobV065sHyperDmd:1>1girl, __tipo_1girl__, __tipo_play__, solo, very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, explicit",
+"TIPO 1girl play 📋","<lora:NoobV065sHyperDmd:1>1girl, __1girl__, __play__, solo, very awa, masterpiece, best quality, newest, highres, absurdres, explicit",
+"TIPO 1girl play [Sample] 📋","<lora:NoobV065sHyperDmd:1>1girl, __tipo_1girl__, __tipo_play__, solo, very awa, masterpiece, best quality, newest, highres, absurdres, explicit",
 "🎨StyleE 📋","__MixedStyle__ # <lora:NoobEStylesCollection:1> __NoobStylesCollection__ # <lora:NoobEStylesDump:1> __NoobEStylesDump__",
 "🎨StyleV 📋","__MixedStyle__ # <lora:NoobVStylesCollection:1> __NoobStylesCollection__ # <lora:NoobVStylesDump:1> __NoobVStylesDump__",
-"DMD2[4]: LCM, SGM Uniform 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"DMD2[4]: LCM, SGM Uniform 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: SGM Uniform",
-"DMD2[4]: DPM++ 2S a, SGM Uniform 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"DMD2[4]: DPM++ 2S a, SGM Uniform 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: DPM++ 2S a, Schedule type: SGM Uniform",
-"DMD2[4]: LCM, DDIM 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"DMD2[4]: LCM, DDIM 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: LCM, Schedule type: DDIM",
-"DMD2[4+]: Euler a CFG++, Beta 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"DMD2[4+]: Euler a CFG++, Beta 📋↙️","<lora:dmd2_sdxl_4step:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 4, CFG scale: 1, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: Euler Ancestral CFG++, Schedule type: Beta",
-"Hyper[10+]: Euler a, SGM Uniform 📋↙️","<lora:Hyper_sdxl_8step:1> very awa, masterpiece, best quality, year 2024, newest, highres, absurdres, general, safe, # explicit,
+"Hyper[10+]: Euler a, SGM Uniform 📋↙️","<lora:Hyper_sdxl_8step:1> very awa, masterpiece, best quality, newest, highres, absurdres, general, safe, # explicit,
 Negative prompt: bad anatomy, worst quality, low quality
 Steps: 10, CFG scale: 2, Denoising strength: 0.6, Hires CFG Scale: 0, Hires upscale: 1.5, Hires steps: 0, Hires upscaler: Latent (nearest-exact), Sampler: Euler a, Schedule type: SGM Uniform",
