@@ -106,6 +106,7 @@ E-Pred に戻すときも同様です。
 
 ### 2025/02/24
 
+- `Download/Stable-diffusion/NoobE` に `songMix_v12` モデルを追加しました。
 - 拡張機能に [sd-webui-pnginfo-beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) を追加しました。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/log/2502/PngInfo.webp)
