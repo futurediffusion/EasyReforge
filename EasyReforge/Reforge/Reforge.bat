@@ -50,11 +50,11 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 @REM Git 未インストール環境にて reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
 
 echo pip install -qq -r requirements.txt
-pip install -qq -r requirements.txt
+pip install -qq -r requirements.txt > NUL 2>&1
 cd > NUL
 
 echo pip install -qq -r requirements_versions.txt
-pip install -qq -r requirements_versions.txt
+pip install -qq -r requirements_versions.txt > NUL 2>&1
 cd > NUL
 
 if not exist extensions-builtin\sd_forge_controlnet\presets\ ( mkdir extensions-builtin\sd_forge_controlnet\presets )
