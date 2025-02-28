@@ -49,13 +49,13 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM Git 未インストール環境にて reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
 
-@REM ADetailer の ("mediapipe", "0.10.13", "0.10.15"), による 0.10.14 が requirements_versions の protobuf-3.20.0 を拒否する
-@REM echo pip install -qq mediapipe==0.10.7
-
 echo pip install -qq -r requirements.txt
 pip install -qq -r requirements.txt
 cd > NUL
 
+echo pip install -qq -r requirements_versions.txt
+pip install -qq -r requirements_versions.txt
+cd > NUL
 
 if not exist extensions-builtin\sd_forge_controlnet\presets\ ( mkdir extensions-builtin\sd_forge_controlnet\presets )
 echo xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
