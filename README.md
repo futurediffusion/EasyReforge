@@ -104,6 +104,9 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/02/28
+
+- `Download/Stable-diffusion/NoobE` の [`songMix_v12`](https://civitai.com/models/1286421?modelVersionId=1455149) を [`songMix_v13`](https://civitai.com/models/1286421?modelVersionId=1472562) に更新しました。
 
 ### 2025/02/25
 
