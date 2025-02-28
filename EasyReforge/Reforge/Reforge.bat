@@ -6,8 +6,8 @@ set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
 pushd %~dp0..\..
 
 @REM echo https://github.com/Panchovix/stable-diffusion-webui-reForge/tree/dev
-@REM https://github.com/Panchovix/stable-diffusion-webui-reForge/
-call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main 8ac78f65c97908a25c3f47b5311cc7268ff79eea
+@REM https://github.com/Panchovix/stable-diffusion-webui-reForge/ 8ac78f65c97908a25c3f47b5311cc7268ff79eea
+call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd
@@ -50,10 +50,10 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 @REM Git 未インストール環境にて reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
 
 @REM ADetailer の ("mediapipe", "0.10.13", "0.10.15"), による 0.10.14 が requirements_versions の protobuf-3.20.0 を拒否する
-@REM echo pip install -qq mediapipe==0.10.7 protobuf==3.20.3
-@REM pip install -qq mediapipe==0.10.7 protobuf==3.20.3
-echo pip install -qq -r requirements_versions.txt
-pip install -qq -r requirements_versions.txt > NUL 2>&1
+@REM echo pip install -qq mediapipe==0.10.7
+
+echo pip install -qq -r requirements.txt
+pip install -qq -r requirements.txt
 cd > NUL
 
 
