@@ -104,6 +104,10 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/03/06
+
+- `Download\adetailer\segm\AnzhcHead-seg.bat` と `Download\adetailer\segm\AnzhcHeadHair-seg.bat` のリンク切れを修正しました。
+
 ### 2025/03/02
 
 - `Download/Stable-diffusion/NoobE` に [`AniKawa`](https://civitai.com/models/1282887?modelVersionId=1447392) を追加しました。
