@@ -106,6 +106,8 @@ E-Pred に戻すときも同様です。
 
 ### 2025/03/06
 
+- `Download/Stable-diffusion/NoobE/` にある `songMix_v14` のバージョンを更新しました。
+	- HyperDmd Cfg1 で使用する際には、`LCM` サンプラー & `DDIM` スケジューラと組み合わせてください。
 - `Download\adetailer\segm\AnzhcHead-seg.bat` と `Download\adetailer\segm\AnzhcHeadHair-seg.bat` のリンク切れを修正しました。
 
 ### 2025/03/02
