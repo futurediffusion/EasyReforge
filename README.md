@@ -104,6 +104,14 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/03/07
+
+- [TrainTrain](https://github.com/hako-mikan/sd-webui-traintrain) と [SuperMerger](https://github.com/hako-mikan/sd-webui-supermerger) を使えるように `Forge.bat` を追加しました。
+	- TrainTrain の ADDifT は 1分で差分 LoRA を学習できます（Geforce RTX 3060 12GB）。
+		- 『[交替直接差分学習法ADDifT(Alternating Direct Difference Training)の解説](https://note.com/hakomikan/n/n716397e39d56)』
+		- 『[ADDifTの実践1](https://note.com/hakomikan/n/n2a00c2bb39af)』
+	- 学習した LoRA は SuperMerger でモデルにマージできます。
+
 ### 2025/03/06
 
 - `Download/Stable-diffusion/NoobE/` にある `songMix_v14` のバージョンを更新しました。
