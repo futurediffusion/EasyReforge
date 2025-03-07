@@ -73,8 +73,8 @@ call %GITHUB_CLONE_OR_PULL% nihedon sd-webui-weight-helper main
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
-@REM call %GITHUB_CLONE_OR_PULL% zixaphir Stable-Diffusion-Webui-Civitai-Helper master
-@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+call %GITHUB_CLONE_OR_PULL% zixaphir Stable-Diffusion-Webui-Civitai-Helper master
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Bocchi-Chan2023/stable-diffusion-webui-wd14-tagger
 @REM call %GITHUB_CLONE_OR_PULL% Bocchi-Chan2023 stable-diffusion-webui-wd14-tagger master 2d313188ae9176906e9d6c5138d4b1638ff19a09
