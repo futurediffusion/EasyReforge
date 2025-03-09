@@ -5,9 +5,11 @@ set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
 
 pushd %~dp0..\..
 
-@REM echo https://github.com/Panchovix/stable-diffusion-webui-reForge/tree/dev
-@REM https://github.com/Panchovix/stable-diffusion-webui-reForge/ 8ac78f65c97908a25c3f47b5311cc7268ff79eea
-call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main
+@REM echo https://github.com/Panchovix/stable-diffusion-webui-reForge
+@REM ERROR:root:ERROR lora diffusion_model.output_blocks.1.1.transformer_blocks.2.ff.net.0.proj.weight Allocation on device
+@REM torch.cuda.OutOfMemoryError: Allocation on device
+@REM TypeError: 'NoneType' object is not iterable
+call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main 19395bf96ccdc605774c76a9fe8cc7145b637128
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd
