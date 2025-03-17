@@ -104,6 +104,11 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/03/17
+
+- `Download\Stable-diffusion\NoobE\TanemoMix_v20.bat` を追加しました。
+- `Download\Stable-diffusion\NoobE\CottonNoob_v20.bat` のバージョンを更新しました。
+
 ### 2025/03/13
 
 - `Download/Stable-diffusion/NoobE/` にある `songMix_v15` のバージョンを更新しました。
