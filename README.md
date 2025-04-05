@@ -104,6 +104,12 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/04/05
+
+- 何事もなければ明日、不具合対策で更新を止めていた `reForge` のバージョンを大幅に引き上げます。
+	- **互換性のない変更になる可能性がありますので、心配な方は更新前にバックアップを取る、別フォルダに新規インストールするなどの対策をしてください。**
+	- 通常の状態で Geforce RTX 50x0 に対応する見込みです。
+
 ### 2025/03/17
 
 - `Download\Stable-diffusion\NoobE\TanemoMix_v20.bat` を追加しました。
