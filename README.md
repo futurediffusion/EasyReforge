@@ -108,6 +108,7 @@ E-Pred に戻すときも同様です。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/NoobInpaint.webp)
 
+- `Update.bat` の初回実行が失敗しても、もう一度 `Update.bat` を実行すると正常に更新できる場合があります。
 - 『[お手軽インペイント書き換え](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/NoobInpaint.webp)』のチートシートを追加しました。
 - `reForge` のインストール方法変更やパッチを含む大規模な更新です。
 	- **更新後に問題がある場合は、`stable-diffusion-webui-reForge/venv/` をリネームで退避して `Update.bat` で再更新してみてください。**
