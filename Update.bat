@@ -7,20 +7,20 @@ if %ERRORLEVEL% neq 0 ( exit /b 1 )
 pushd %~dp0EasyTools
 echo.
 echo https://github.com/Zuntan03/EasyTools
-echo git -C EasyTools switch -f main --quiet
-git -C EasyTools switch -f main --quiet
-echo git -C EasyTools pull
-git pull
+echo git -C EasyTools fetch origin
+git fetch origin
+echo git -C EasyTools reset --hard origin/main
+git reset --hard origin/main
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd
 
 pushd %~dp0
 echo.
 echo https://github.com/Zuntan03/EasyReforge
-echo git -C EasyReforge switch -f main --quiet
-git switch -f main --quiet
-echo git -C EasyReforge pull
-git pull
+echo git -C EasyReforge fetch origin
+git fetch origin
+echo git -C EasyReforge reset --hard origin/main
+git reset --hard origin/main
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd
 

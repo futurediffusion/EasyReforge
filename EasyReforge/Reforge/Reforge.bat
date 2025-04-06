@@ -9,19 +9,12 @@ pushd %~dp0..\..
 @REM ERROR:root:ERROR lora diffusion_model.output_blocks.1.1.transformer_blocks.2.ff.net.0.proj.weight Allocation on device
 @REM torch.cuda.OutOfMemoryError: Allocation on device
 @REM TypeError: 'NoneType' object is not iterable
+@REM 3/9 19395bf96ccdc605774c76a9fe8cc7145b637128 Inpaint OK, HiresModel: NG
 call %GITHUB_CLONE_OR_PULL% Panchovix stable-diffusion-webui-reForge main 19395bf96ccdc605774c76a9fe8cc7145b637128
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd
 pushd %~dp0..\..\stable-diffusion-webui-reForge
-
-@REM @REM dev ブランチへの切り替え
-@REM git switch -C dev origin/dev
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
-
-@REM @REM main ブランチへの切り替え extensions-builtin/reForge-advanced_model_sampling(_backported) が無い環境仮対策
-@REM git switch -C main origin/main
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 call %EASY_TOOLS%\Python\Python_Activate.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
@@ -30,37 +23,40 @@ echo python -m pip install -qq --upgrade pip
 python -m pip install -qq --upgrade pip
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-echo pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121
+@REM https://github.com/woct0rdho/SageAttention/releases
+@REM https://github.com/woct0rdho/triton-windows/releases
+echo pip install -qq --pre torch==2.7.0.dev20250311+cu128 torchvision==0.22.0.dev20250312+cu128 --index-url https://download.pytorch.org/whl/nightly/cu128
+pip install -qq --pre torch==2.7.0.dev20250311+cu128 torchvision==0.22.0.dev20250312+cu128 --index-url https://download.pytorch.org/whl/nightly/cu128
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-@REM できることが増えないがドライバに要求するバージョンが増える？
-@REM echo pip install -qq torch==2.5.1+cu124 torchvision --index-url https://download.pytorch.org/whl/cu124
-@REM pip install -qq torch==2.5.1+cu124 torchvision --index-url https://download.pytorch.org/whl/cu124
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
-
-@REM CN Pidinet ModuleNotFoundError: No module named 'basicsr'
-echo pip install -qq basicsr==1.4.2
-pip install -qq basicsr==1.4.2
+echo pip install -qq --pre triton-windows==3.3.0a0.post14
+pip install -qq --pre triton-windows==3.3.0a0.post14
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-@REM fixed ImportError: cannot import name 'cached_download' from 'huggingface_hub'
-@REM echo pip install -qq peft==0.13.2 huggingface-hub==0.25.2
-@REM pip install -qq peft==0.13.2 huggingface-hub==0.25.2
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+set "TRITON_CACHE=C:\Users\%USERNAME%\.triton\cache"
+set "TORCH_INDUCTOR_TEMP=C:\Users\%USERNAME%\AppData\Local\Temp\torchinductor_%USERNAME%"
 
-@REM Git 未インストール環境にて reForge から呼ばれる python -m pip が GIT 環境変数を参照せず、PATH も引き継いでいない？
+if not exist "%TRITON_CACHE%" ( goto :EASY_TRITON_CACHE_NOT_FOUND )
+echo rmdir /S /Q "%TRITON_CACHE%"
+rmdir /S /Q "%TRITON_CACHE%"
+if %ERRORLEVEL% neq 0 ( pause & exit /b 1 )
+:EASY_TRITON_CACHE_NOT_FOUND
 
-echo pip install -qq -r requirements.txt
-pip install -qq -r requirements.txt > NUL 2>&1
-cd > NUL
+if not exist "%TORCH_INDUCTOR_TEMP%" ( goto :EASY_TORCH_INDUCTOR_TEMP_NOT_FOUND )
+echo rmdir /S /Q "%TORCH_INDUCTOR_TEMP%"
+rmdir /S /Q "%TORCH_INDUCTOR_TEMP%"
+if %ERRORLEVEL% neq 0 ( pause & exit /b 1 )
+:EASY_TORCH_INDUCTOR_TEMP_NOT_FOUND
 
-echo pip install -qq -r requirements_versions.txt
-pip install -qq -r requirements_versions.txt > NUL 2>&1
-cd > NUL
+echo pip install -qq https://github.com/woct0rdho/SageAttention/releases/download/v2.1.1-windows/sageattention-2.1.1+cu128torch2.7.0-cp310-cp310-win_amd64.whl
+pip install -qq https://github.com/woct0rdho/SageAttention/releases/download/v2.1.1-windows/sageattention-2.1.1+cu128torch2.7.0-cp310-cp310-win_amd64.whl
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-if not exist extensions-builtin\sd_forge_controlnet\presets\ ( mkdir extensions-builtin\sd_forge_controlnet\presets )
-echo xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
-xcopy /QY %~dp0src\txt2img_Inpaint_Unit*.txt extensions-builtin\sd_forge_controlnet\presets\
+echo pip install -qq -r %~dp0src\requirements.txt
+pip install -qq -r %~dp0src\requirements.txt
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+echo xcopy /SQY %~dp0src\stable-diffusion-webui-reForge\*.* .\
+xcopy /SQY %~dp0src\stable-diffusion-webui-reForge\*.* .\
 
 popd

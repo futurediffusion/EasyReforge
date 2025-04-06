@@ -11,27 +11,27 @@ if not exist ..\extensions-backup\ (
 )
 
 @REM https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
-call %GITHUB_CLONE_OR_PULL% DominikDoom a1111-sd-webui-tagcomplete main
+call %GITHUB_CLONE_OR_PULL% DominikDoom a1111-sd-webui-tagcomplete main c341ccccb6e10ec0b84403f4c95803532f6fd0aa
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Bing-su/adetailer
-call %GITHUB_CLONE_OR_PULL% Bing-su adetailer main
+call %GITHUB_CLONE_OR_PULL% Bing-su adetailer main 36189cbea735b85fd01e98ac42002b8ce6f0e41d
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Panchovix/reForge-Sigmas_merge
-call %GITHUB_CLONE_OR_PULL% Panchovix reForge-Sigmas_merge main
+call %GITHUB_CLONE_OR_PULL% Panchovix reForge-Sigmas_merge main 027b89f07d0d44fae12a1fab4a73f4f770a066cd
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/adieyal/sd-dynamic-prompts
-call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts main
+call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts main de056ff8d80e4ad120e13a90cf200f3383f427c6
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Haoming02/sd-forge-couple
-call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-couple main
+call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-couple main 707f72c1f8d4401e96eaeffbff5755fad9299b12
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/blue-pen5805/sdweb-easy-generate-forever
-call %GITHUB_CLONE_OR_PULL% blue-pen5805 sdweb-easy-generate-forever master
+call %GITHUB_CLONE_OR_PULL% blue-pen5805 sdweb-easy-generate-forever master 2f507a03be3dd918765de114dd35c4f703805548
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/alemelis/sd-webui-ar
@@ -40,7 +40,7 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :MOVE_TO_BACKUP sd-webui-ar
 
 @REM https://github.com/altoiddealer/--sd-webui-ar-plusplus
-call %GITHUB_CLONE_OR_PULL% altoiddealer --sd-webui-ar-plusplus main
+call %GITHUB_CLONE_OR_PULL% altoiddealer --sd-webui-ar-plusplus main 8b900cd2748f95bce455db62ba0cb08093a3ca59
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist --sd-webui-ar-plusplus\resolutions.txt (
@@ -54,12 +54,12 @@ if not exist --sd-webui-ar-plusplus\aspect_ratios.txt (
 )
 
 @REM チェック状態の保存ができない
-@REM https://github.com/hako-mikan/sd-webui-cd-tuner
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main 99baedb599da874f9ee389aa44383bdda448a340
+@REM https://github.com/hako-mikan/sd-webui-cd-tuner 99baedb599da874f9ee389aa44383bdda448a340
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main f03cc2fef48e9564ece6338ecca8a9df71fae5cd
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/hako-mikan/sd-webui-lora-block-weight
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-lora-block-weight main
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-lora-block-weight main 34d2e0ce46a798f0b145d915470851623530bb85
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Panchovix/sd-webui-lora-block-weight-reforge
@@ -68,20 +68,20 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :MOVE_TO_BACKUP sd-webui-lora-block-weight-reforge
 
 @REM チェック状態の保存ができない
-@REM https://github.com/hako-mikan/sd-webui-negpip
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main 6ad0365f5a0ae8f66bc785f828a27720b8e6c3c2
+@REM https://github.com/hako-mikan/sd-webui-negpip 6ad0365f5a0ae8f66bc785f828a27720b8e6c3c2
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main b054b92b0fec3b6a65c172aeae3adf45ce87949c
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/bluelovers/sd-webui-pnginfo-beautify
-call %GITHUB_CLONE_OR_PULL% bluelovers sd-webui-pnginfo-beautify master
+call %GITHUB_CLONE_OR_PULL% bluelovers sd-webui-pnginfo-beautify master be63fa2d568cd135548a8eacb27a184776473c16
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/nihedon/sd-webui-weight-helper
-call %GITHUB_CLONE_OR_PULL% nihedon sd-webui-weight-helper main
+call %GITHUB_CLONE_OR_PULL% nihedon sd-webui-weight-helper main a4cc2f4d91ca75fc5e457d6d9fa113de622f803c
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper
-call %GITHUB_CLONE_OR_PULL% zixaphir Stable-Diffusion-Webui-Civitai-Helper master
+call %GITHUB_CLONE_OR_PULL% zixaphir Stable-Diffusion-Webui-Civitai-Helper master c2b9aa804ed5206ab5eaa111464643dbae6660c6
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Bocchi-Chan2023/stable-diffusion-webui-wd14-tagger
@@ -93,11 +93,11 @@ echo %CURL_CMD% -o stable-diffusion-webui-wd14-tagger\tagger\utils.py https://gi
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM https://github.com/KohakuBlueleaf/z-tipo-extension
-call %GITHUB_CLONE_OR_PULL% KohakuBlueleaf z-tipo-extension main
+call %GITHUB_CLONE_OR_PULL% KohakuBlueleaf z-tipo-extension main 32d61cf213f6346b05e69fc57fe830ecd9fbfca8
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP
-call %GITHUB_CLONE_OR_PULL% L4Ph stable-diffusion-webui-localization-ja_JP main
+call %GITHUB_CLONE_OR_PULL% L4Ph stable-diffusion-webui-localization-ja_JP main d639f8ca6d635686806bebfc8fb6efbe9a71e636
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem %~dp0..\..\stable-diffusion-webui-reForge\extensions

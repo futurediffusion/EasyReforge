@@ -27,7 +27,7 @@
 |:-:|:-:|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcard.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/TipoWildcardMulti.webp)|
-|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/FramePlanner.webp)||
+|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/FramePlanner.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/NoobInpaint.webp)|
 
 ### 基本操作
 
@@ -103,6 +103,41 @@ E-Pred に戻すときも同様です。
 
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
+
+### 2025/04/06
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/NoobInpaint.webp)
+
+- 『[お手軽インペイント書き換え](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/NoobInpaint.webp)』のチートシートを追加しました。
+- `reForge` のインストール方法変更やパッチを含む大規模な更新です。
+	- **更新後に問題がある場合は、`stable-diffusion-webui-reForge/venv/` をリネームで退避して `Update.bat` で再更新してみてください。**
+- Geforce RTX 50x0 と SageAttention に対応しました。
+	- グラフィックスドライバの更新が必要になる可能性があります。
+- Hires. fix でモデルを変更できない不具合に仮対処しました。
+- インストール後にオフラインで利用できるようにしました。
+- 高速化オプションを指定した `Reforge_Fast.bat` を追加しました。
+- コントロールネットの [Noob インペイントモデル](https://huggingface.co/Wenaka/NoobAI_XL_Inpainting_ControlNet_Full)を追加しました。
+	- `Download\ControlNet\NoobE\NoobE_Inpaint.bat`
+- ControlNet のプリプロセッサに `inpaint_only_noobai_xl+lama`, `inpaint_only_noobai_xl`, `inpaint_noobai_xl` を追加しました。
+- コントロールネットのプリセットに `AnyTest`, `Kataragi_Inpaint`, `Noob_Inpaint`, `Noob_Tile` を追加しました。
+- モデルのダウンロードに対応しました。
+	- 新しい Illustrious 系モデルを Cfg1 高速運用する際には、`LCM` & `ResSolver` などサンプラー & スケジューラを色々試してみてください。
+	- `Download\Stable-diffusion\NoobE\CatTower_v12.bat`
+	- `Download\Stable-diffusion\NoobE\CottonIllustrious_v10.bat`
+	- `Download\Stable-diffusion\NoobE\NovaAnime_v60.bat`
+	- `Download\Stable-diffusion\NoobE\SmoothMix.bat`
+	- `Download\Stable-diffusion\NoobE_Unique\NovaFurry_v50.bat`
+- モデルのバージョンを更新しました。
+	- `Download\Stable-diffusion\NoobE\LibrasIllustriousXL_v50.bat`
+	- `Download\Stable-diffusion\NoobE\songMix_v22.bat`
+	- `Download\Stable-diffusion\NoobE_Real\PornMasterPro_v25.bat`
+	- `Download\Stable-diffusion\NoobE_Unique\PVCStyleModelMovable_v13a.bat`
+	- `Download\Stable-diffusion\NoobV\CatTowerV_v17.bat`
+	- `Download\Stable-diffusion\NoobV\HikariNoob_v121.bat`
+	- `Download\Stable-diffusion\NoobV\ObsessionV_v11.bat`
+	- `Download\Stable-diffusion\NoobV\WaiShuffleNoobV_v20.bat`
+- ADetailer の検出モデルを追加しました。
+	- `Download\adetailer\segm\panties_seg_v3a.bat`
 
 ### 2025/04/05
 
