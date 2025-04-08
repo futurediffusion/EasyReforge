@@ -19,7 +19,8 @@ call %~dp0..\All\ESRGAN.bat
 
 call %~dp0..\ControlNet\Sdxl\Inpaint_Kataragi.bat
 call %~dp0..\ControlNet\Pony\AnyTest_PonyDim256_v40.bat
-@REM call %~dp0..\ControlNet\NoobE\NoobE_Tile.bat
+call %~dp0..\ControlNet\NoobE\NoobE_Tile.bat
+call %~dp0..\ControlNet\NoobE\NoobE_Inpaint.bat
 
 call %~dp0..\Lora\Noob_Boost\NoobV065sHyperDmd.bat
 call %~dp0..\Lora\Sdxl_Boost\dmd2_sdxl_4step.bat
