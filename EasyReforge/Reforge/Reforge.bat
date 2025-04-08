@@ -25,6 +25,7 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM https://github.com/woct0rdho/SageAttention/releases
 @REM https://github.com/woct0rdho/triton-windows/releases
+@REM pip install --pre -U torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
 echo pip install -qq --pre torch==2.7.0.dev20250311+cu128 torchvision==0.22.0.dev20250312+cu128 --index-url https://download.pytorch.org/whl/nightly/cu128
 pip install -qq --pre torch==2.7.0.dev20250311+cu128 torchvision==0.22.0.dev20250312+cu128 --index-url https://download.pytorch.org/whl/nightly/cu128
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
