@@ -16,8 +16,8 @@ pushd %~dp0..\..\stable-diffusion-webui-forge
 call %EASY_TOOLS%\Python\Python_Activate.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-echo python -m pip install -qq --upgrade pip
-python -m pip install -qq --upgrade pip
+echo python -m pip install -qq -U pip setuptools wheel
+python -m pip install -qq -U pip setuptools wheel
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 echo pip install -qq torch==2.3.1+cu121 torchvision --index-url https://download.pytorch.org/whl/cu121

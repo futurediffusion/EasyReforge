@@ -104,6 +104,10 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/04/09
+
+- 特定の環境で `python setup.py bdist_wheel did not run successfully.` のエラーでインストールに失敗する問題に対処しました。
+
 ### 2025/04/08
 
 - 最小ダウンロード構成で Tile と Inpaint のコントロールネットモデルをダウンロードするようにしました。
