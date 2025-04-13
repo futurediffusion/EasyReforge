@@ -105,6 +105,11 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/04/13
+
+- [reForge 本家の更新は終了](https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354) しました。
+	- 先日の大規模更新で少し前のバージョンにてリビジョンを固定済みですので、新しい環境が出てくるまで Noob や Illustrious 用の環境としてあるがままをご利用ください。
+
 ### 2025/04/10
 
 - インストール手順に `Microsoft Visual C++ Redistributable` のインストールを追加しました。
