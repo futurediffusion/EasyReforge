@@ -105,6 +105,12 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/04/14
+
+- `NegPiP` と `CD Tuner` のバージョンを、`Settings`-`Defaults` で起動状態を設定するバージョンまで巻き戻しました。
+	- `NegPiP` 左のチェックボックスで有効/無効を切り替えてから、`Settings`-`Defaults` の `Apply` で保存します。
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Troubleshoot/NegPipUi.webp)
+
 ### 2025/04/13
 
 - [reForge 本家の更新は終了](https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354) しました。

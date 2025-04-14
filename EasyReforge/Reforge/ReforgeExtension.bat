@@ -55,7 +55,8 @@ if not exist --sd-webui-ar-plusplus\aspect_ratios.txt (
 
 @REM チェック状態の保存ができない
 @REM https://github.com/hako-mikan/sd-webui-cd-tuner 99baedb599da874f9ee389aa44383bdda448a340
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main f03cc2fef48e9564ece6338ecca8a9df71fae5cd
+@REM f03cc2fef48e9564ece6338ecca8a9df71fae5cd
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-cd-tuner main 99baedb599da874f9ee389aa44383bdda448a340
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/hako-mikan/sd-webui-lora-block-weight
@@ -69,7 +70,8 @@ call :MOVE_TO_BACKUP sd-webui-lora-block-weight-reforge
 
 @REM チェック状態の保存ができない
 @REM https://github.com/hako-mikan/sd-webui-negpip 6ad0365f5a0ae8f66bc785f828a27720b8e6c3c2
-call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main b054b92b0fec3b6a65c172aeae3adf45ce87949c
+@REM b054b92b0fec3b6a65c172aeae3adf45ce87949c
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip main 6ad0365f5a0ae8f66bc785f828a27720b8e6c3c2
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/bluelovers/sd-webui-pnginfo-beautify
