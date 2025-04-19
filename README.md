@@ -105,6 +105,10 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/04/20
+
+- Hires. fix で `TypeError: 'NoneType' object is not iterable` が発生する不具合を修正しました。
+
 ### 2025/04/14
 
 - `NegPiP` と `CD Tuner` のバージョンを、`Settings`-`Defaults` で起動状態を設定するバージョンまで巻き戻しました。
