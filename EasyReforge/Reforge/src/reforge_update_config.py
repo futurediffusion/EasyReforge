@@ -24,6 +24,7 @@ class ReforgeConfig:
             "0.2.1": self.update_0_2_1,
             "0.2.2": self.update_0_2_2,
             "0.2.3": self.update_0_2_3,
+            "0.2.4": self.update_0_2_4,
         }
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
@@ -170,6 +171,11 @@ class ReforgeConfig:
         cfg["easy_reforge_config_version"] = "0.2.4"
 
         cfg["stealth_pnginfo_opt"] = "None"
+
+    def update_0_2_4(self, cfg):
+        cfg["easy_reforge_config_version"] = "0.2.5"
+
+        cfg["stealth_pnginfo_option"] = "None"
 
 
 if __name__ == "__main__":
