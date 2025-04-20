@@ -108,6 +108,7 @@ E-Pred に戻すときも同様です。
 ### 2025/04/20
 
 - Hires. fix で `TypeError: 'NoneType' object is not iterable` が発生する不具合を修正しました。
+- TIPO の動作が遅い不具合を修正しました。
 
 ### 2025/04/14
 
