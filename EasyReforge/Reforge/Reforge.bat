@@ -1,5 +1,6 @@
 @echo off
 chcp 65001 > NUL
+set CURL_CMD=C:\Windows\System32\curl.exe -kL
 set EASY_TOOLS=%~dp0..\..\EasyTools
 set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
 
@@ -52,6 +53,19 @@ rmdir /S /Q "%TORCH_INDUCTOR_TEMP%"
 echo pip install -qq https://github.com/woct0rdho/SageAttention/releases/download/v2.1.1-windows/sageattention-2.1.1+cu128torch2.7.0-cp310-cp310-win_amd64.whl
 pip install -qq https://github.com/woct0rdho/SageAttention/releases/download/v2.1.1-windows/sageattention-2.1.1+cu128torch2.7.0-cp310-cp310-win_amd64.whl
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+set LLAMA_CPP_WHL=llama_cpp_python-0.3.4-cp310-cp310-win_amd64.whl
+if exist %LLAMA_CPP_WHL% ( goto :LLAMA_CPP_INSTALLED )
+
+echo %CURL_CMD% -O https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/%LLAMA_CPP_WHL%
+%CURL_CMD% -O https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/%LLAMA_CPP_WHL%
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+echo pip install -qq %LLAMA_CPP_WHL%
+pip install -qq %LLAMA_CPP_WHL%
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+:LLAMA_CPP_INSTALLED
 
 echo pip install -qq -r %~dp0src\requirements.txt
 pip install -qq -r %~dp0src\requirements.txt
