@@ -24,6 +24,10 @@
 
 ## 使い方
 
+解説いただいた記事
+
+- [新環境構築にEasyReforge 使ったから自動的に入るやつ全部解説する](https://note.com/kagami_kami/n/n79f46bc6147b)
+
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_00_Basic.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_02_VPred.webp)|
 |:-:|:-:|
 |![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Txt2ImgInpaint.webp)|![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyReforge/Sample/CheatSheet/Reforge_01_Tipo.webp)|
@@ -104,6 +108,14 @@ E-Pred に戻すときも同様です。
 
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
+
+### 2025/04/25
+
+- 使い方に解説いただいた記事『[新環境構築にEasyReforge 使ったから自動的に入るやつ全部解説する](https://note.com/kagami_kami/n/n79f46bc6147b)』へのリンクを追加しました。
+- 以下モデルのバージョンを更新しました。
+	- `Download\Stable-diffusion\NoobE\songMix_v30.bat`
+- 以下 LoRA のダウンロードに対応しました。
+	- `Download\Lora\NoobE_Char\Gqux_GQ_bull_v10.bat`
 
 ### 2025/04/20
 
