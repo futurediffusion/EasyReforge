@@ -43,6 +43,14 @@ if not exist %CURL_EXE% (
 )
 set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
+if exist %~dp0stable-diffusion-webui\ (
+	echo "%~dp0stable-diffusion-webui がすでに存在します。別のフォルダにインストールしてください。"
+	pause & exit /b 1
+)
+if exist %~dp0stable-diffusion-webui-forge\ (
+	echo "%~dp0stable-diffusion-webui-forge がすでに存在します。別のフォルダにインストールしてください。"
+	pause & exit /b 1
+)
 if exist %~dp0stable-diffusion-webui-reForge\ (
 	echo "%~dp0stable-diffusion-webui-reForge がすでに存在します。別のフォルダにインストールしてください。"
 	pause & exit /b 1
