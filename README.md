@@ -109,6 +109,17 @@ E-Pred に戻すときも同様です。
 - **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/05/06
+
+- 以下のモデルのバージョンを更新しました。
+	- `Download\Stable-diffusion\NoobE\CottonIllustrious_v20.bat`
+	- `Download\Stable-diffusion\NoobE\songMix_v32.bat`
+- 以下のダウンロードに対応しました。
+	- `Download\Lora\Noob_Bundle\songMixLeco.bat`
+	- `Download\VAE\Sdxl\songVae_v10.bat`
+	- `Download\Stable-diffusion\NoobE\lillyMix_v11.bat`
+	- `Download\Stable-diffusion\NoobE\viviMix_v12.bat`
+
 ### 2025/05/04
 
 - インストール時の reForge 上書きチェックに、A1111 と Forge も追加しました。

@@ -1,5 +1,7 @@
 @echo off
 chcp 65001 > NUL
+set EASY_TOOLS=%~dp0EasyTools
+set EMBEDDABLE_PYTHON=%EASY_TOOLS%\Python\env\python310
 
 if not exist %~dp0stable-diffusion-webui-reForge\venv\ (
 	echo call %~dp0Update.bat
@@ -36,6 +38,21 @@ if %ERRORLEVEL% equ 0 (
 if %ERRORLEVEL% neq 0 (
 	set GIT=%~dp0EasyTools\Git\env\PortableGit\bin\git.exe
 	call %~dp0EasyTools\Git\Git_SetPath.bat
+)
+
+if exist %EMBEDDABLE_PYTHON%\ (
+	@REM tcc.exe & VS Build Tools cl.exe
+	if not exist %~dp0stable-diffusion-webui-reForge\venv\Scripts\Include\Python.h (
+		echo xcopy /SQY %EMBEDDABLE_PYTHON%\include\*.* %~dp0stable-diffusion-webui-reForge\venv\Scripts\Include\
+		xcopy /SQY %EMBEDDABLE_PYTHON%\include\*.* %~dp0stable-diffusion-webui-reForge\venv\Scripts\Include\
+
+		echo xcopy /SQY %EMBEDDABLE_PYTHON%\libs\*.* %~dp0stable-diffusion-webui-reForge\venv\Scripts\libs\
+		xcopy /SQY %EMBEDDABLE_PYTHON%\libs\*.* %~dp0stable-diffusion-webui-reForge\venv\Scripts\libs\
+	)
+
+	@REM VS Build Tools
+	@REM echo set "INCLUDE=%INCLUDE%;%EMBEDDABLE_PYTHON%\include"
+	@REM set "INCLUDE=%INCLUDE%;%EMBEDDABLE_PYTHON%\include"
 )
 
 @REM LBW bug: --api --enable-insecure-extension-access
