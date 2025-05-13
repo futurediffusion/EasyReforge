@@ -106,8 +106,12 @@ E-Pred に戻すときも同様です。
 
 ## 最近の更新内容
 
-- **reForge の更新内容は [こちら](https://github.com/Panchovix/stable-diffusion-webui-reForge/commits/main) 。**  
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
+
+### 2025/05/13
+
+- モデルに `Download\Stable-diffusion\NoobE_Real\DivingIL_RealAsian_v20.bat` を追加しました。
+	- HyperDMD 利用時は `LCM Beta` の組み合わせが良さそうでした。
 
 ### 2025/05/06
 
