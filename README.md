@@ -108,10 +108,15 @@ E-Pred に戻すときも同様です。
 
 - **更新で編集したスタイルが巻き戻った場合は、`stable-diffusion-webui-reForge\sytles.csv` の横にある日付付きバックアップファイルからコピペして復元してください。**
 
+### 2025/05/14
+
+- モデルに `Download\Stable-diffusion\NoobE\plumMix_v10.bat` を追加しました。
+	- HyperDMD 利用時は `LCM DDIM` の組み合わせが良さそうでした。
+
 ### 2025/05/13
 
 - モデルに `Download\Stable-diffusion\NoobE_Real\DivingIL_RealAsian_v20.bat` を追加しました。
-	- HyperDMD 利用時は `LCM Beta` の組み合わせが良さそうでした。
+	- HyperDMD 利用時は `LCM Beta` か `LCM DDIM` の組み合わせが良さそうでした。
 
 ### 2025/05/06
 
