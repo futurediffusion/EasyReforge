@@ -15,15 +15,17 @@ set EASY_TOOLS_URL=https://github.com/Zuntan03/EasyTools
 set EASY_TOOLS_BRANCH=main
 
 if not exist "C:\Windows\System32\where.exe" (
-	echo "[ERROR] C:\Windows\System32\where.exe が見つかりません。"
-	pause & exit /b 1
+        echo "[ERROR] C:\Windows\System32\where.exe が見つかりません。"
+        echo "[ERROR] No se encontró C:\Windows\System32\where.exe"
+        pause & exit /b 1
 )
 
 set PS_EXE=PowerShell
 where /Q %PS_EXE%
 if %ERRORLEVEL% neq 0 (
-	echo "[ERROR] %PS_EXE% が見つかりません。"
-	pause & exit /b 1
+        echo "[ERROR] %PS_EXE% が見つかりません。"
+        echo "[ERROR] No se encontró %PS_EXE%"
+        pause & exit /b 1
 )
 
 @REM Windows 10 でプリインストールされているバージョンが 5.1
@@ -31,33 +33,41 @@ set PS_CMD=PowerShell -Version 5.1 -NoProfile -ExecutionPolicy Bypass
 
 %PS_CMD% -c "if ('%~dp0' -match '^[a-zA-Z0-9:_\\/-]+$') {exit 0}; exit 1"
 if %ERRORLEVEL% neq 0 (
-	echo "[ERROR] 現在のフォルダパス %~dp0 に英数字・ハイフン・アンダーバー以外が含まれています。"
-	echo "英数字・ハイフン・アンダーバーのフォルダパスに bat ファイルを移動して、再実行してください。"
-	pause & exit /b 1
+        echo "[ERROR] 現在のフォルダパス %~dp0 に英数字・ハイフン・アンダーバー以外が含まれています。"
+        echo "[ERROR] La ruta %~dp0 contiene caracteres no permitidos."
+        echo "英数字・ハイフン・アンダーバーのフォルダパスに bat ファイルを移動して、再実行してください。"
+        echo "Mueva el archivo bat a una ruta que use solo letras, números, guiones y guiones bajos y ejecúteló de nuevo."
+        pause & exit /b 1
 )
 
 set CURL_EXE=C:\Windows\System32\curl.exe
 if not exist %CURL_EXE% (
-	echo "[ERROR] %CURL_EXE% が見つかりません。"
-	pause & exit /b 1
+        echo "[ERROR] %CURL_EXE% が見つかりません。"
+        echo "[ERROR] No se encontró %CURL_EXE%"
+        pause & exit /b 1
 )
 set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
 if exist %~dp0stable-diffusion-webui\ (
-	echo "%~dp0stable-diffusion-webui がすでに存在します。別のフォルダにインストールしてください。"
-	pause & exit /b 1
+        echo "%~dp0stable-diffusion-webui がすでに存在します。別のフォルダにインストールしてください。"
+        echo "%~dp0stable-diffusion-webui ya existe. Instale en otra carpeta."
+        pause & exit /b 1
 )
 if exist %~dp0stable-diffusion-webui-forge\ (
-	echo "%~dp0stable-diffusion-webui-forge がすでに存在します。別のフォルダにインストールしてください。"
-	pause & exit /b 1
+        echo "%~dp0stable-diffusion-webui-forge がすでに存在します。別のフォルダにインストールしてください。"
+        echo "%~dp0stable-diffusion-webui-forge ya existe. Instale en otra carpeta."
+        pause & exit /b 1
 )
 if exist %~dp0stable-diffusion-webui-reForge\ (
-	echo "%~dp0stable-diffusion-webui-reForge がすでに存在します。別のフォルダにインストールしてください。"
-	pause & exit /b 1
+        echo "%~dp0stable-diffusion-webui-reForge がすでに存在します。別のフォルダにインストールしてください。"
+        echo "%~dp0stable-diffusion-webui-reForge ya existe. Instale en otra carpeta."
+        pause & exit /b 1
 )
 
 echo "未成年の方は利用できません。"
+echo "No disponible para menores de edad."
 echo "動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）"
+echo "Se descargarán los modelos necesarios. ¿Continuar? [y/n] (por defecto: y)"
 echo "Download Model etc. Are you sure? [y/n] (default: y)"
 set /p DOWNLOAD_MDOEL_YES_OR_NO=
 
@@ -80,7 +90,8 @@ if not exist %PORTABLE_GIT_BIN%\ (
 
 	start "" %PS_CMD% -Command "Start-Sleep -Seconds 5; $title='Portable Git for Windows 64-bit'; $window=Get-Process | Where-Object { $_.MainWindowTitle -eq $title } | Select-Object -First 1; if ($window -ne $null) { [void][System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic'); [Microsoft.VisualBasic.Interaction]::AppActivate($window.Id); Start-Sleep -Seconds 1; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('{ENTER}') }"
 
-	echo "操作せずに、そのまま Portable Git for Windows をインストールしてください。"
+        echo "操作せずに、そのまま Portable Git for Windows をインストールしてください。"
+        echo "Instale Portable Git for Windows sin realizar ninguna operación."
 	%EASY_GIT_DIR%\env\PortableGit.7z.exe
 	if !ERRORLEVEL! neq 0 ( pause & endlocal & exit /b 1 )
 
@@ -95,6 +106,7 @@ set "PATH=%PORTABLE_GIT_BIN%;%PATH%"
 where /Q git
 if %ERRORLEVEL% equ 0 ( goto :EASY_GIT_FOUND )
 echo "[Error] Git をインストールできませんでした。手動で Git for Windows をインストールしてください。"
+echo "[Error] No se pudo instalar Git. Instale Git for Windows manualmente."
 pause & exit /b 1
 
 :EASY_GIT_FOUND
@@ -152,9 +164,11 @@ exit /b 0
 echo reg add "HKCU\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
 reg add "HKCU\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
 if %ERRORLEVEL% neq 0 (
-	echo "Windows の長いパス対応を有効にできませんでした。"
-	echo "Windows の管理者権限で EasyTools/EnableLongPaths.bat を実行してください。"
-	pause
+        echo "Windows の長いパス対応を有効にできませんでした。"
+        echo "No se pudo habilitar el soporte de rutas largas de Windows."
+        echo "Windows の管理者権限で EasyTools/EnableLongPaths.bat を実行してください。"
+        echo "Ejecute EasyTools/EnableLongPaths.bat con privilegios de administrador de Windows."
+        pause
 )
 
 if exist "%~0" ( del "%~0" )
