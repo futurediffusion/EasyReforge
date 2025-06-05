@@ -72,7 +72,7 @@ class ForgeConfig:
         cfg["infotext_skip_pasting"] = ["Emphasis"]
         cfg["interrupt_after_current"] = False
 
-        cfg["bilingual_localization_file"] = "ja_JP"
+        cfg["bilingual_localization_file"] = "es_ES"
         cfg["dp_wildcard_manager_no_sort"] = True
         cfg["tac_showWikiLinks"] = True
         cfg["tipo_no_extra_input"] = True

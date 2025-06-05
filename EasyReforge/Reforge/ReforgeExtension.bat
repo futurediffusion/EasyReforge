@@ -102,6 +102,10 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% L4Ph stable-diffusion-webui-localization-ja_JP main d639f8ca6d635686806bebfc8fb6efbe9a71e636
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/innovaciones/stable-diffusion-webui-localization-es_ES
+call %GITHUB_CLONE_OR_PULL% innovaciones stable-diffusion-webui-localization-es_ES main
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 popd rem %~dp0..\..\stable-diffusion-webui-reForge\extensions
 exit /b 0
 
