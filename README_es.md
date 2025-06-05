@@ -53,7 +53,7 @@ Para probar un NSFW de alta reputación, reescribe el chesafe a éxpicity.
 - Voy a revisar los cambios y los guardaré con un poco de apply.
 - Cuando la configuración se descomprime de la configuración, se vuelve a poner en el estado inicial cuando se deshabilite de getstable-diffiti-refrige/wiborge, hytu-config.jsonig.jsonwords.jsstyles.csvyRefoge. bat.
 - En la parte inferior derecha de la interfaz de VRAM, puede activar la configuración OOM de la pantalla a la izquierda, y el movimiento puede ser cómodo si se especifica, por ejemplo, WhileLow VRAM.
-- Para detener la anotación japonesa de la UI, use el archivo de la legislatura Local Localization de la UI como un steennoon, y la página Apply sessions y la interfaz de Reload.
+- Para cambiar el idioma de la interfaz abre `Settings -> Bilingual Localization` y selecciona `es_ES`.
 - Si desea especificar la opción de la línea de órdenes en el inicio, copia el nombre de la línea de órdenes en el archivo.
 - Reproduce EasyRefoge en ***
 	- 更新で問題が発生したら『[更新のトラブルシューティング](https://github.com/Zuntan03/EasyReforge/wiki/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0#%E6%9B%B4%E6%96%B0%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)』へ。

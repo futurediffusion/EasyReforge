@@ -111,7 +111,7 @@ class ReforgeConfig:
     def update_0_1_2(self, cfg):
         cfg["easy_reforge_config_version"] = "0.1.3"
 
-        cfg["bilingual_localization_file"] = "ja_JP"
+        cfg["bilingual_localization_file"] = "es_ES"
 
     def update_0_1_3(self, cfg):
         cfg["easy_reforge_config_version"] = "0.1.4"
