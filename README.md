@@ -1,4 +1,6 @@
-﻿# EasyReforge
+# EasyReforge
+
+[Español](README_es.md)
 
 [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) でお手軽に高速画像生成する EasyReforge です。  
 [NoobAi](https://civitai.com/models/833294) の Epsilon-Prediction 版 ( **NoobE** ) と V-Prediction 版 ( **NoobV** ) を主に扱います。
