@@ -8,8 +8,9 @@ if not exist %~dp0stable-diffusion-webui-reForge\venv\ (
 	call %~dp0Update.bat
 )
 if not exist %~dp0stable-diffusion-webui-reForge\venv\ (
-	echo "[Error] %~dp0stable-diffusion-webui-reForge\venv\ が見つかりません。"
-	pause & exit /b 1
+        echo "[Error] %~dp0stable-diffusion-webui-reForge\venv\ が見つかりません。"
+        echo "[Error] No se encontró %~dp0stable-diffusion-webui-reForge\venv\"
+        pause & exit /b 1
 )
 
 pushd %~dp0stable-diffusion-webui-reForge
